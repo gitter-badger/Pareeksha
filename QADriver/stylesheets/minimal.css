@@ -1,0 +1,475 @@
+@charset "UTF-8";
+
+/*
+Display
+Background
+Positioning
+Float/Clear
+Width/Height
+Margin/Padding
+Color
+Text
+Borders
+*/
+
+/* =============================== */
+/* ======== ERROR MESSAGE ======== */
+/* =============================== */
+
+#error {
+	margin-bottom: 10px;
+	padding: 9px;
+	background-color: #ffffd5;
+	border: 1px solid #dd9988;
+	color: #990000;
+}
+
+#error_no_address{
+	color: #990000;
+}
+
+#error h1 {
+	padding-bottom: 4px;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+#error p {
+	padding: 0px;
+	margin: 0px;
+}
+
+/* =============================== */
+/* ====== End ERROR MESSAGE ====== */
+/* =============================== */
+
+
+html, body { margin:0px; }
+
+body {
+	padding: 0px;
+	text-align: center;
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+
+img, dl, dt, dd, li, p, h1, h2, h3, h4, h5, h6, form { /* remove default margin/padding from elements, can be added back later */
+	margin: 0;
+	padding: 0;
+}
+
+img { border:none; }
+
+ul { list-style: none; margin: 0px; padding: 0px; }
+
+a { 
+	outline: none; /* eliminates ugly outline around clicked links (Firefox) */
+	text-decoration: none; 
+	color: #003399;
+}
+
+a:hover { text-decoration: underline; }
+
+.client_logo2{
+	float:left;
+	width:100%;
+	/*height:67px;*/
+	color:inherit;
+	padding-top:2px;
+}
+.amazon1pay_logo{
+	float:right;
+	width:100%;
+	text-align:right;
+}
+	
+#container{
+	width:100%;
+	float:left;
+	/*margin-left: 3em;*/ 
+}
+
+
+.clearing {
+	clear: both;
+	height: 0px;
+	font-size: 0px; 
+	line-height: 0px; 
+}
+
+#global_container {
+	position: relative;
+	width: 90%;
+	margin: 0 auto; 
+	text-align: left;
+}
+
+h2 {
+	padding-bottom: 6px;
+	color: #CC6600; 
+    font-size: 14px;
+}
+
+h3 {
+	margin: 8px 0 8px 0;
+	padding: 5px 0 5px 5px;
+	background-color: #eeeecc;
+	font-size: 13px;
+}
+
+p {
+	padding-bottom: 8px;
+}
+
+td {
+	font-size: 12px;
+}
+
+.less_emphasis {
+	color: #666666;
+}
+
+.small {
+	font-size: 10px;
+}
+
+
+/* ============================== */
+/* ===== #header ================ */
+/* ============================== */
+
+#header {
+	background: url(../img/rule_top_gradation.gif) repeat-x center bottom;
+	width: 100%;
+	height: 80px;
+	margin-bottom: 12px;
+}
+
+
+/* ===== #branding_cobrand ==== */
+
+#branding_cobrand {
+	width: 20%;
+	padding-left: 16px;
+}
+
+
+/* ===== #progress_indicator ==== */
+
+#progress_indicator {
+	width: 50%;
+	text-align: center;
+}
+
+
+/* ===== #branding_payments ===== */
+
+#branding_payments {
+	width: 30%;
+	padding-right: 12px;
+	text-align: right;
+}
+
+
+/* ============================== */
+/* ===== #footer ================ */
+/* ============================== */
+
+#footer {
+	background: url(../img/rule_bottom_gradation.gif) repeat-x center top;
+	clear: both;
+	text-align: center;
+	
+}
+
+#footer a {
+	text-decoration: underline;
+}
+
+#footer p {
+	padding-top: 8px;
+	font-size: 10px;
+}
+
+#footer .policies {
+	width: 680px;
+	margin: 0 auto;
+	padding: 38px 0 5px 0;
+	border-bottom: 1px solid #cccccc;
+	
+}
+
+
+/* ============================== */
+/* ===== #content_main ========== */
+/* ============================== */
+
+#content_main {
+	float: left;
+	width: 99%;
+	padding-bottom: 4px;
+}
+
+#content_main .continue {
+	text-align: right;
+}
+
+
+/* ============================== */
+/* ===== Sign-In ================ */
+/* ============================== */
+
+.sign_in h3 {
+	background: none;
+	margin: 0;
+	padding: 5px 0 8px 0;
+	color: #CC6600; 
+    font-size: 12px;
+}
+
+.sign_in #signin_form {
+	margin: 0 5% 30px 5%; 
+	font-weight: bold;
+}
+
+.sign_in #signin_form a {
+	font-weight: normal;
+}
+
+.sign_in #signin_form label {
+	float: left;
+	width: 260px;
+	padding: 2px 5px 0 0;
+	text-align: right;
+}
+
+.sign_in #signin_form .radio {
+	margin-left: 240px;
+}
+
+.sign_in #signin_form .radio label {
+	float: none;
+	width: auto;
+	padding: 2px 5px 0 0;
+	text-align: left;
+}
+
+.sign_in #signin_form .offset {
+	margin-left: 262px;
+}
+
+.sign_in #signin_form .pwd_label {
+	margin-top: -8px;
+}
+
+.sign_in #signin_form #continue {
+	margin-bottom: 12px;
+}
+
+
+.sign_in #about {
+	margin: 30px 5% 30px 5%; 
+}
+
+.sign_in #footer .policies a {
+	text-decoration: none;
+}
+
+.sign_in #footer .policies a:hover {
+	text-decoration: underline;
+}
+
+
+/* ============================== */
+/* ===== Shipping =============== */
+/* ============================== */
+
+.shipping #content_main .column_address {
+	width: 24%;
+	float: left;
+	padding: 0.25em;
+}
+
+.shipping #content_main .column_address p {
+	padding-bottom: 3px;
+}
+
+.shipping #content_main .column_address .shift_right {
+	padding-left: 20px;
+}
+
+.shipping #content_main #new_address {
+	clear: both;
+	padding: 20px 0 0 0;
+}
+
+.shipping #content_main #new_address h3 {
+	background: none;
+}
+
+.shipping #content_main #new_address input {
+	width: 200px;
+}
+
+.shipping #content_main #new_address input.radio, #content_main #new_address input.submit {
+	width: auto;
+}
+
+.shipping #content_main #new_address label {
+	float: left;
+	width: 230px;
+	padding: 2px 5px 0 0;
+	text-align: right;
+	font-weight: bold;
+}
+
+
+.shipping #content_main #new_address select {
+    width: 200px;
+}
+
+.shipping #content_main #new_address .learnmore {
+	padding-left: 235px;
+	font-size: 9px;
+}
+
+.shipping #content_main #new_address .learnmore a {
+	text-decoration: underline;
+}
+
+
+/* ============================== */
+/* ===== Payment Method ========= */
+/* ============================== */
+
+.payment_method #content_main .column_card {
+	width: 24%;
+	float: left;
+	padding: 0 0 12px 0;
+}
+
+.payment_method #content_main td {
+	line-height: 26px;
+}
+
+.payment_method #content_main .shift_right {
+	padding-left: 26px;
+}
+
+.payment_method #content_main .narrow {
+	width: 30px;
+}
+
+.payment_method #content_main .learnmore {
+	font-size: 9px;
+}
+
+.payment_method #content_main .learnmore a {
+	text-decoration: underline;
+}
+
+
+/* ============================== */
+/* ===== Confirm Payment ======== */
+/* ============================== */
+
+
+.confirm_payment #content_main .summary {
+	margin-bottom: 12px;
+}
+
+.confirm_payment #content_main .summary caption {
+	background: url(../img/confirm-roundcorner-topleft.gif) no-repeat left top;
+	background-color: #eeeecc;
+	
+}
+
+.confirm_payment #content_main .summary h3 {
+	background: url(../img/confirm-roundcorner-topright.gif) no-repeat right top;
+	margin: 0;
+	padding: 5px 0 5px 0;
+}
+
+.confirm_payment #content_main .summary td {
+	padding: 12px 12px 20px 12px;
+	border-left: 1px solid #f0edcc;
+	border-bottom: 1px solid #f0edcc;
+	vertical-align: top;
+}
+
+.confirm_payment #content_main .summary td.right {
+	border-right: 1px solid #f0edcc;
+}
+
+.confirm_payment #content_main .summary td form {
+	padding-bottom: 10px;
+}
+
+.confirm_payment #content_main .summary td .btn_change {
+	margin: 0 0 -4px 16px;
+}
+
+.confirm_payment #content_main .summary p {
+	padding-bottom: 2px;
+}
+
+.confirm_payment #content_main .shift_right {
+	padding-left: 30px;
+}
+
+.confirm_payment #content_main .details .shift_right {
+	padding-left: 30px;
+}
+
+.confirm_payment #content_main .summary a {
+	text-decoration: underline;
+}
+
+.confirm_payment #content_main .item_label {
+	float: left;
+	width: 100px;
+}
+
+.confirm_payment #content_main .item {
+	float: left;
+}
+
+.confirm_payment #content_main .price {
+	width: 80px;
+	margin-left: 350px;
+	text-align: right;
+}
+
+.confirm_payment #content_main .details .multi_item_seller {
+	padding-top: 6px;
+	padding-left: 100px;
+}
+
+.confirm_payment #content_main .details .multi_seller {
+	padding-top: 0px;
+	padding-bottom: 6px;
+	padding-left: 100px;
+}
+
+.confirm_payment #content_main .part_total_name {
+	float: left;
+	width: 210px;
+}
+
+.confirm_payment #content_main .part_total_value {
+	margin-left: 150px ;
+	text-align: right;
+}
+
+.confirm_payment #content_main .payment_details_name {
+	float: left;
+	width: 70px;
+	text-align: right;
+}
+.confirm_payment #content_main .payment_details_value {
+	float: left;
+	text-align: left;
+}
+
+
+
