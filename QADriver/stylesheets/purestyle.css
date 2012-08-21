@@ -1,0 +1,247 @@
+﻿/***********************************************************************
+    BASE TAGS/FONTS                                                                                             //possibly move this to a main site specific css that won't be inherited?
+***********************************************************************/
+body            {color:#4e4e4e; font-size:13px; background-color:#DAF3FD; font-family:Segoe UI, Arial,Verdana,Helvetica,sans-serif; }
+#baseHeader     {color:#000;}
+
+p               {line-height:1.5em;}
+ul              {list-style-type:square;}
+
+img             {border:none;}
+
+a               {color:#005a88;					text-decoration:none;}
+a:hover,
+a:focus         {color:#138cdd;                 text-decoration:underline;}
+a:active        {color:#f58220;}
+
+
+h1              {color:#646464; font-size:20px; font-weight:lighter;}
+h2              {color:#f58220; font-size:18px; font-weight:lighter; line-height:24px;}
+h3              {color:#646464; font-size:14px;}
+h4              {color:#888888; font-size:16px;}
+h5              {color:#f58220; font-size:16px; font-weight:normal;}
+h6              {color:#4e4e4e; font-size:14px; font-weight:bold;}
+h6.greenText    {color:#19b300;                 font-weight:lighter; line-height:1em; text-decoration:none;}
+
+
+/***********************************************************************
+    HELPER CLASSES
+***********************************************************************/
+.nobreak        {white-space: nowrap;}
+
+/*buttons*/
+a.greenbutton,
+a.bluebutton, 
+a.redbutton         {color:#fff; }
+a.greybutton        {color:#4e4e4e;}
+
+a.greenbutton, 
+a.bluebutton, 
+a.redbutton, 
+a.greybutton         {font-size:13px; font-weight:bold; text-decoration:none; line-height:1.4em; background-position:top right; background-repeat:no-repeat;}
+a.greenbutton        {background-image:url(../images/btn_green_r.gif);}
+a.bluebutton         {background-image:url(../images/btn_blue_r.gif);}
+a.redbutton          {background-image:url(../images/btn_orange_r.gif);}
+a.greybutton         {background-image:url(../images/btn_grey_right.gif);}
+
+a.greenbutton span, 
+a.bluebutton span, 
+a.redbutton span, 
+a.greybutton span    {background-position:top left; background-repeat:no-repeat; cursor:hand;}
+a.greenbutton span   {background-image:url(../images/btn_green_l.gif);}
+a.bluebutton span    {background-image:url(../images/btn_blue_l.gif);}
+a.redbutton span     {background-image:url(../images/btn_orange_l.gif);}
+a.greybutton span    {background-image:url(../images/btn_grey_cap.gif);}
+
+
+/***********************************************************************
+    BASE BACKGROUNDS / COLORS
+***********************************************************************/
+/*main blocks*/
+#top_bkg, #footer_bkg       {background-color:#fff;}
+/*#content_bkg                {background-image: url('../images/bg_span_wol.gif');background-repeat:repeat-y;}    OM: move to sprite?
+#base_page_footer           {background: url('../images/bg_footer_image_wol.jpg') no-repeat 0 0;}
+#basePageFrame              {background:url('../images/header_bkg_wol.jpg') no-repeat 0 0;}                     OM: move to sprite?*/
+
+/***********************************************************************
+    SECTION: MASTHEAD
+***********************************************************************/
+.masthead_country           {color: #333333; font-weight: bold;}
+#baseHeader a               {color:#000;}       /*is this really necessary?*/
+#mastheadLinks              {font-size:9pt;}
+#mastheadLinks a            {color: #0066cc;}
+
+/***********************************************************************
+    SECTION: NAVIGATION
+***********************************************************************/
+/*productLevelNavigation*/
+ul.product_nav_double a, 
+ul.product_nav_single a,
+ul.product_nav_double a:hover, 
+ul.product_nav_single a:hover,
+ul.product_nav_double a:active, 
+ul.product_nav_single a:active                  {color:#0066cc; font-size:14px; text-decoration:none;}
+
+ul.product_nav_double li.activeProduct a, 
+ul.product_nav_single li.activeProduct a        {color:#333333;}
+
+ul.product_nav_double li.activeProduct a:hover,
+ul.product_nav_single li.activeProduct a:hover  {color:#006699;}
+
+/*tabNavigation*/
+ul.tab_nav, 
+ul.tab_nav_double								{background:url('../images/navigation/tabs_bottom_full.gif') bottom no-repeat;}
+ul.tab_nav_full									{background:url('../images/navigation/tabs_bottom_full_918.gif') bottom no-repeat;}
+
+ul.tab_nav li, 
+ul.tab_nav_double li							{background:url('../images/navigation/tabs_bottom_repeat.gif') bottom repeat-x #f8f8f8; border-top:1px solid #c6c6c6; border-left:1px solid #c6c6c6; text-align:center;}
+
+ul.tab_nav li.activeTab, 
+ul.tab_nav_double li.activeTab					{background:url('../images/navigation/tabs_active.gif') top repeat-x #ffffff; border-right:1px solid #c6c6c6;}
+ul.tab_nav li.lastItem, 
+ul.tab_nav_double li.lastItem					{border-right:1px solid #c6c6c6;}
+
+ul.tab_nav a,  
+ul.tab_nav_double a								{color:#5f5f5f;	font-size: 12px; text-decoration:none;}
+
+ul.tab_nav li.activeTab a, 
+ul.tab_nav_double li.activeTab a,  
+ul.tab_nav a:hover,  
+ul.tab_nav_double a:hover						{color:#4eb0e9; text-decoration:none;/*needed for IE6*/}
+
+/*pagination*/
+#pageNav div									{vertical-align:middle;}
+#pageNav ul.pagination_nav						{list-style:none;}
+li.activePage a									{color:#4EB0E9; text-decoration:none;}
+
+
+/***********************************************************************
+    SECTION: SITEMAP
+***********************************************************************/
+.sitemap_nav                {background:url(../images/page_div.jpg) no-repeat 0 0;}                             /* OM: move to sprite?*/
+.sitemap_explore            {background:url(../images/page_div.jpg) no-repeat 0 bottom;}                          /* OM: move to sprite?*/
+.sitemap_explore a, 
+.sitemap_explore a:visited  {color:#4eb0e9;}
+.sitemap_explore a:active   {color:#F58220;}
+#exploreText a              {font-size:13px;}
+#exploreText a:active       {text-decoration:underline;}
+.sitemap ul                 {color:#000000; list-style-type:none;}
+.sitemap li p               {color:#646464; font-size:10px; padding:0;}
+
+.sitemap li.header a        {color:#646464; font-weight:bold; text-decoration:none;}
+.sitemap li.header a:hover,
+.sitemap li.header a:focus  {color:#4eb0e9;}
+.sitemap li.header a:active {color:#f58220;}
+
+.sitemap_columns a          {color:#4e4e4e; text-decoration:none; }
+.sitemap_columns a:hover,
+.sitemap_columns a:focus    {color:#4eb0e9;}
+.sitemap_columns a:active   {color:#f58220;}
+
+/***********************************************************************
+    SECTION: FOOTER
+***********************************************************************/
+#base_page_footer, 
+#base_page_footer a         {color:#0066cc; font-size:9pt;}
+#footer_links p             {color:#333333;}
+
+/***********************************************************************
+    SECTION: FAQ
+***********************************************************************/
+.faq-container                  {background:url(../images/faq/title_grad_1x32.gif) repeat-x; border:1px solid #d1d1d1; border-bottom-width:0; }
+.faq-question                   {background:#ffffff url(../images/faq/faq_fadeline_707.gif) no-repeat bottom; cursor:pointer;}
+.faq-question-last              {background:#ffffff url(../images/footer_div_line.gif) no-repeat 0 38px; cursor:pointer;}
+.faq-show .faq-question, 
+.faq-show .faq-question-last    {background:none;}
+.faq-answer                     {background:#ffffff url(../images/faq/faq_answer_grad.gif) repeat-x bottom;}
+
+.faq-container a, 
+.faq-container a:hover,
+.faq-container a:focus          {color:#196297; cursor:pointer; text-decoration:none;}
+
+.faq-container p.faq-title      {color:#646464; font-weight:bold;}
+.faq-container p.toggle         {color:#196297; text-align:right;}
+.faq-show .faq-question p, 
+.faq-show .faq-question-last p  {color:#4eb0e9; background:url(../images/faq/expando_on_11x11.gif) no-repeat 0 3px;}
+.faq-hide .faq-question p, 
+.faq-hide .faq-question-last p  {color:#196297; background:url(../images/faq/expando_off_11x11.gif) no-repeat 0 3px;}
+.faq-answer p a:hover           {color:#4eb0e9; text-decoration:underline;}
+
+/***********************************************************************
+    SECTION: DATATABLE
+***********************************************************************/
+.datatable td                           {background-color:#f6f6f6;}
+.datatable .pivot                       {background-color:#cc99cc;}
+.datatable .header td                   {background-color:#e6edf1;}
+
+.datatable td.borderRight               {border:none; border-right:1px solid #c6c6c6;}
+.datatable td.firstBorderRight          {border:none; border-right:1px solid #c6c6c6;}
+.datatable td.borderNone                {border:none;}
+
+.datatable td.borderTopFadeLeft         {border:none; background:#c6c6c6 url(../images/windows-vista/compare-editions/border_fadeout_left.gif) no-repeat top left;}
+.datatable td.borderTopFadeRight        {border:none; background:#c6c6c6 url(../images/windows-vista/compare-editions/border_fadeout_right.gif) no-repeat top right;}
+.datatable td.borderTop                 {border:0; background:#c6c6c6;}
+
+.datatable .alternating td              {background-color:#ffffff;}
+.nonalternatingdisplay .alternating td  {background-color:#ffffff;}
+.datatable td.transparent               {background-color:transparent;}
+.datatable td.valign_top                {vertical-align:top;}
+.datatable td.valign_middle             {vertical-align:middle;}
+.datatable td.valign_bottom             {vertical-align:bottom;}
+.datatable td.align_right               {text-align:right;}
+.datatable td.align_center              {text-align:center;}
+.green_check, 
+.yellow_check, 
+.green_checkmark, 
+.yellow_checkmark, 
+.blue_checkmark, 
+.black_checkmark, 
+.green_checkmark_plus, 
+.plus_win_7                             {text-align:center; vertical-align:middle;}
+
+.datatable .header p                    {color:#646464; font-weight:bold; font-size:13px; vertical-align:middle;}
+.datatable h5                          {line-height:1.5em;}  /*this might be subsite specific!*/
+
+/***********************************************************************
+    MASTER: BASE ARTICLE
+***********************************************************************/
+/*content footer*/
+.content_footer             {background:url('../images/footer_div_line.gif') no-repeat;}
+.media_types                {font-size: 12px; line-height:1.5em;}
+.media_types a              {color:#888888;}
+.media_types a:hover,
+.media_types a:focus        {color:#4EB0E9;text-decoration:none;}
+.media_types a:active       {color:#F58220;}
+.media_types a.print        {background:url('../images/icons/icon_print_off.gif') no-repeat;}               /* OM: move to sprite?*/
+.media_types a.print:hover,
+.media_types a.print:focus  {background-image:url('../images/icons/icon_print_hover.gif');}                 /* OM: move to sprite?*/
+.media_types a.email        {background:url('../images/icons/icon_email_off.gif') no-repeat;}               /* OM: move to sprite?*/
+.media_types a.email:hover,
+.media_types a.email:focus  {background-image:url('../images/icons/icon_email_hover.gif');}                 /* OM: move to sprite?*/
+
+/*right rail*/
+.call_to_action             {background-repeat: no-repeat; background-position:top left;}
+.ctaDefault                 {background-image: url('../images/crosslinks/cta.gif');}
+.call_to_action .space      {text-decoration:none;}
+.crosslink a                {cursor:pointer; text-decoration:none;}
+.crosslink h6.greenTextTop  {color:#19b300; line-height:1em; font-weight:lighter; }
+.crosslink h6.greenTextTop a{color:#19b300;}
+.crosslink h6.greenText a   {color:#19b300; font-size:14px;}
+.crosslink p, 
+.call_to_action p           {font-size:11px; line-height:1.2em;}
+.crosslink p a              {font-size:13px; cursor:pointer; text-decoration:none;}
+
+/*horizontal ul*/
+.horizontal                 {background: url(../images/windows-7/winhome_divider.gif) no-repeat 0 100%;}
+
+/*************************************************************************
+	Shop Navigation
+**************************************************************************/
+#shopnavigation				{padding-left: 0px; margin-left: 7px; clear: both;}
+#shopnavigation li			{list-style-type: none; display: inline-block; margin-right: 20px;}
+#shopnavigation li a:hover	{color: #006699; text-decoration: none;}
+.searchParentContainerDivCss {display:none;}
+#header_right {display:none;}
+
+
+

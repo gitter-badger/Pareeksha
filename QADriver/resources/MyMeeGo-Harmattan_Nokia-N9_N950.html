@@ -1,0 +1,2946 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0020)http://my-meego.com/ -->
+<HTML><HEAD><TITLE>My-MeeGo ~ MeeGo Harmattan (Nokia N9 / N950) Software & News</TITLE><LINK 
+rel=icon href="http://my-meego.com/favicon.ico"><LINK 
+title="MeeGo News Headlines" rel=alternate type=application/rss+xml 
+href="http://my-meego.com/meego.xml"><LINK title="MeeGo Harmattan Downloads" 
+rel=alternate type=application/rss+xml 
+href="http://my-meego.com/downloads/harmattan_downloads.xml"><LINK 
+title="MeeGo Forum New Topics" rel=alternate type=application/rss+xml 
+href="http://my-symbian.com/forum/rss/forum_41.xml"><LINK 
+title="Maemo Forum New Topics" rel=alternate type=application/rss+xml 
+href="http://my-symbian.com/forum/rss/forum_37.xml">
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type>
+<META name=keywords 
+content=MeeGo,Harmattan,Qt,Nokia,N9,apps,software,N950,N900,Linux,Maemo,Hildon,Fremantle,WeTab,Moblin,smartphone,free,download,forum>
+<META name=description 
+content="MeeGo and MeeGo Harmattan (Nokia N9 / N950) Info Center: news, apps, hardware, download, tips, FAQ, on-line store, reviews, discussion forum and more.">
+<META name=author content="Michal Jerz">
+<STYLE type=text/css>UNKNOWN {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+A:link {
+	COLOR: navy; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: navy; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: red; TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: red; TEXT-DECORATION: underline
+}
+.input {
+	BORDER-BOTTOM-STYLE: none; BORDER-LEFT-STYLE: none; FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; FONT-SIZE: 8pt
+}
+</STYLE>
+
+<SCRIPT type=text/javascript 
+src="MyMeeGo-Harmattan_Nokia-N9_N950_files/jquery.min.js"></SCRIPT>
+
+<SCRIPT type=text/javascript>
+var headline_count;
+var current_headline=0;
+
+$(document).ready(function(){
+  headline_count = $("div.headline").size();
+  $("div.headline:eq("+current_headline+")").css('top', '5px');
+  setInterval(headline_rotate,5000); //time in milliseconds
+});
+
+function headline_rotate() {
+  old_headline = current_headline % headline_count;
+  new_headline = ++current_headline % headline_count;
+  $("div.headline:eq(" + old_headline + ")").css('top', '430px');
+  $("div.headline:eq(" + new_headline + ")").show().animate({top: 5},"slow");     
+}
+</SCRIPT>
+
+<STYLE type=text/css media=screen>#scrollup {
+	BORDER-BOTTOM: #fff 0px solid; POSITION: relative; BORDER-LEFT: #fff 0px solid; WIDTH: 430px; HEIGHT: 30px; OVERFLOW: hidden; BORDER-TOP: #fff 0px solid; BORDER-RIGHT: #fff 0px solid
+}
+.headline {
+	POSITION: absolute; WIDTH: 430px; HEIGHT: 195px; TOP: 210px; LEFT: 5px
+}
+</STYLE>
+
+<SCRIPT type=text/javascript>
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7725586-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</SCRIPT>
+
+<META name=GENERATOR content="MSHTML 9.00.8112.16447"></HEAD>
+<BODY bgColor=#302d2d><A name=top></A>
+<TABLE border=0 cellSpacing=1 cellPadding=1 width=750 align=center>
+  <TBODY>
+  <TR>
+    <TD vAlign=top colSpan=10 noWrap align=left><A 
+      href="http://my-meego.com/index.php"><IMG border=0 alt="" 
+      src="MyMeeGo-Harmattan_Nokia-N9_N950_files/meego_header.jpg" 
+    height=70></A></TD></TR>
+  <TR>
+    <TD height=30 vAlign=top width=63 align=left><FONT color=#ff0000 size=1 
+      face=Arial><B><A style="COLOR: red; TEXT-DECORATION: none" 
+      title="My-MeeGo Home page" 
+      href="http://my-meego.com/index.php">HOME</A></B></FONT></TD>
+    <TD height=30 vAlign=top width=103 align=left><FONT color=#ffffff size=1 
+      face=Arial><B><A style="COLOR: white; TEXT-DECORATION: none" 
+      title="3rd PARTY SOFTWARE FOR MEEGO" 
+      href="http://my-meego.com/software/index.php">SOFTWARE<BR>&nbsp;CATALOG</A></B></FONT></TD>
+    <TD vAlign=top width=83 align=center><FONT color=#ffffff size=1 
+      face=Arial><B><A style="COLOR: white; TEXT-DECORATION: none" 
+      title="MEEGO DOWNLOADS" 
+      href="http://my-meego.com/downloads/index.php">MEEGO<BR>DOWNLOADS</A></B></FONT></TD>
+    <TD height=30 vAlign=top width=103 align=center><FONT color=#ffffff size=1 
+      face=Arial><B><A style="COLOR: white; TEXT-DECORATION: none" 
+      title="REVIEWS OF MEEGO DEVICES" 
+      href="http://my-meego.com/reviews.php">REVIEWS</A></B></FONT></TD>
+    <TD height=30 vAlign=top width=73 align=left><FONT color=#ff0000 size=1 
+      face=Arial><B><A style="COLOR: white; TEXT-DECORATION: none" 
+      title="TIPS &amp; TRICKS, FAQ" 
+      href="http://my-meego.com/faq/index.php">FAQ &amp; TIPS</A></B></FONT></TD>
+    <TD vAlign=top width=83 align=center><FONT color=#ffffff size=1 
+      face=Arial><B><A style="COLOR: white; TEXT-DECORATION: none" 
+      title="TECHNICAL SPECIFICATIONS" 
+      href="http://my-meego.com/compare.php">TECH SPECS</A></B></FONT></TD>
+    <TD vAlign=top width=83 align=center><FONT color=#ffffff size=1 
+      face=Arial><B><A style="COLOR: white; TEXT-DECORATION: none" 
+      title="Best software for Symbian OS" 
+      href="http://store.my-symbian.com/">SOFTWARE STORE</A></B></FONT></TD>
+    <TD vAlign=top width=63 align=center><FONT color=#ffffff size=1 
+      face=Arial><B><A style="COLOR: white; TEXT-DECORATION: none" 
+      title="MEEGO DISCUSSION FORUM" 
+      href="http://my-symbian.com/forum/">FORUM</A></B></FONT></TD>
+    <TD vAlign=top width=83 align=right><FONT color=#ffffff size=1 
+      face=Arial><B><A style="COLOR: white; TEXT-DECORATION: none" 
+      title="Contact and advertising information" 
+      href="http://my-meego.com/contact.php">CONTACT</A></B></FONT></TD></TR></TBODY></TABLE>
+<TABLE border=0 cellSpacing=2 width=750 align=center>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV align=center>
+      <HR>
+
+      <SCRIPT type=text/javascript><!--
+google_ad_client = "pub-7347402540930999";
+google_alternate_color = "302d2d";
+google_ad_width = 728;
+google_ad_height = 15;
+google_ad_format = "728x15_0ads_al_s";
+//2006-12-06: AdLinks
+google_ad_channel = "9859139678";
+google_color_border = "302d2d";
+google_color_bg = "302d2d";
+google_color_link = "F3FC3F";
+google_color_text = "302d2d";
+google_color_url = "008000";
+//--></SCRIPT>
+
+      <SCRIPT type=text/javascript 
+      src="MyMeeGo-Harmattan_Nokia-N9_N950_files/show_ads.js">
+</SCRIPT>
+      </DIV><IMG 
+  src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"></TD></TR></TBODY></TABLE>
+<TABLE border=1 cellSpacing=5 cellPadding=0 width=750 bgColor=#9f9f9f 
+align=center>
+  <TBODY>
+  <TR vAlign=middle borderColorLight=#9f9f9f borderColorDark=#9f9f9f 
+  borderColor=#9f9f9f>
+    <TD vAlign=middle>
+      <DIV align=center><FONT color=white size=2 face=Arial><B>My-MeeGo: 
+      Software &amp; latest news for MeeGo and MeeGo Harmattan (Nokia N9 / 
+      N950)</B></FONT></DIV></TD></TR>
+  <TR bgColor=#e8e8e8>
+    <TD>
+      <DIV align=center><IMG 
+      src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR>
+      <SCRIPT type=text/javascript><!--
+google_ad_client = "pub-7347402540930999";
+google_ad_slot = "8137181296";
+google_ad_width = 728;
+google_ad_height = 90;
+google_color_link = "0000FF";
+google_color_border = "000000";
+google_color_url = "000000";
+google_color_bg = "e8e8e8";
+//-->
+</SCRIPT>
+
+      <SCRIPT type=text/javascript 
+      src="MyMeeGo-Harmattan_Nokia-N9_N950_files/show_ads.js">
+</SCRIPT>
+      </DIV>
+      <TABLE bgColor=#e8e8e8>
+        <TBODY>
+        <TR>
+          <TD vAlign=top width=100 colSpan=3><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR>
+            <TABLE cellSpacing=0 cellPadding=1 width=100 align=center>
+              <TBODY>
+              <TR>
+                <TD bgColor=white>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT size=3 
+                      face=Arial><B>Search</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT size=1 face=Arial><BR><B>Search terms</B><BR>
+                        <FORM id=cse-search-box action=/search.php>
+                        <DIV><INPUT name=cx 
+                        value=partner-pub-7347402540930999:6bx6eq7nnzp 
+                        type=hidden> <INPUT name=cof value=FORID:10 type=hidden> 
+                        <INPUT name=ie value=ISO-8859-1 type=hidden> <INPUT 
+                        name=q size=9> <INPUT name=sa value=Search type=submit> 
+                        </DIV></FORM>
+                        <SCRIPT type=text/javascript 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/brand.js"></SCRIPT>
+                        </FONT></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush></FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #60278e 2px dotted; BORDER-LEFT: #60278e 2px dotted; BORDER-TOP: #60278e 2px dotted; BORDER-RIGHT: #60278e 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR>
+            <TABLE cellSpacing=0 cellPadding=1 width=100 align=center>
+              <TBODY>
+              <TR>
+                <TD bgColor=white>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT size=3 face=Arial><B>News 
+                        Archive</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT size=1 face=Arial><A 
+                        href="http://my-meego.com/index.php?m=201208&amp;cat=20">August 
+                        2012</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201207&amp;cat=20">July 
+                        2012</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201206&amp;cat=20">June 
+                        2012</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201205&amp;cat=20">May 
+                        2012</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201204&amp;cat=20">April 
+                        2012</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201203&amp;cat=20">March 
+                        2012</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201202&amp;cat=20">February 
+                        2012</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201201&amp;cat=20">January 
+                        2012</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201112&amp;cat=20">December 
+                        2011</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201111&amp;cat=20">November 
+                        2011</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201110&amp;cat=20">October 
+                        2011</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201109&amp;cat=20">September 
+                        2011</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201108&amp;cat=20">August 
+                        2011</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201107&amp;cat=20">July 
+                        2011</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201106&amp;cat=20">June 
+                        2011</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201105&amp;cat=20">May 
+                        2011</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201104&amp;cat=20">April 
+                        2011</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201103&amp;cat=20">March 
+                        2011</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201102&amp;cat=20">February 
+                        2011</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201101&amp;cat=20">January 
+                        2011</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201012&amp;cat=20">December 
+                        2010</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201011&amp;cat=20">November 
+                        2010</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201010&amp;cat=20">October 
+                        2010</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201009&amp;cat=20">September 
+                        2010</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201008&amp;cat=20">August 
+                        2010</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201007&amp;cat=20">July 
+                        2010</A><BR><A 
+                        href="http://my-meego.com/index.php?m=201002&amp;cat=20">February 
+                        2010</A><BR></FONT></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush></FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #60278e 2px dotted; BORDER-LEFT: #60278e 2px dotted; BORDER-TOP: #60278e 2px dotted; BORDER-RIGHT: #60278e 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR>
+            <TABLE cellSpacing=0 cellPadding=1 width=100 align=center>
+              <TBODY>
+              <TR>
+                <TD bgColor=white>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT size=3 face=Arial><B>Mobile 
+                        Access</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT color=black size=1 face=Verdana><BR><B>RSS 
+                        feeds:</B>&nbsp; <IMG 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/rss2.gif"><BR><FONT 
+                        face=Arial><BR><FONT color=red>»</FONT> <A 
+                        href="http://my-meego.com/meego.xml" target=_blank>MeeGo 
+                        News</A> <BR><FONT color=red>»</FONT> <A 
+                        href="http://my-symbian.com/forum/rss/forum_41.xml" 
+                        target=_blank>MeeGo Forum</A> <BR><FONT 
+                        color=red>»</FONT> <A 
+                        href="http://my-symbian.com/forum/rss/forum_37.xml" 
+                        target=_blank>Maemo Forum</A> <BR><FONT 
+                        color=red>»</FONT> <A 
+                        href="http://my-meego.com/downloads/harmattan_downloads.xml" 
+                        target=_blank>New Downloads</A> <BR><FONT 
+                        color=red>»</FONT> <A 
+                        href="http://my-symbian.com/forum/rss/forum_48.xml" 
+                        target=_blank>Tizen Forum</A> <BR><FONT 
+                        color=red>»</FONT> <A 
+                        href="http://my-symbian.com/forum/rss/forum_49.xml" 
+                        target=_blank>Meltemi Forum</A> <BR><BR><A 
+                        href="http://twitter.com/my_meego" target=_blank><IMG 
+                        border=0 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/twitter-my-symbian.png"></A> 
+                        </FONT></FONT></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush></FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #60278e 2px dotted; BORDER-LEFT: #60278e 2px dotted; BORDER-TOP: #60278e 2px dotted; BORDER-RIGHT: #60278e 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR>
+            <TABLE cellSpacing=0 cellPadding=1 width=100 align=center>
+              <TBODY>
+              <TR>
+                <TD bgColor=white>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT size=3 face=Arial><B>News 
+                        Exchange</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT color=black size=1 face=Arial><FONT 
+                        face=Verdana><B>Submit news</B></FONT> about your MeeGo 
+                        software, services and accessories for publication on 
+                        our website using<BR><FONT face=Verdana><B><A 
+                        href="http://my-meego.com/contact.php?name=general">this 
+                        form</A></B></FONT>.<BR></FONT>
+                        <HR>
+                        <FONT color=black size=1 face=Arial><FONT 
+                        face=Verdana><B>Show our news</B></FONT> on your 
+                        website! Check the table above for URLs of our RSS 
+                        feeds. Both general feed and platform-specific feeds are 
+                        available.<BR></FONT></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush></FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #60278e 2px dotted; BORDER-LEFT: #60278e 2px dotted; BORDER-TOP: #60278e 2px dotted; BORDER-RIGHT: #60278e 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR>
+            <TABLE cellSpacing=0 cellPadding=1 width=100 align=center>
+              <TBODY>
+              <TR>
+                <TD bgColor=white>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT size=3 face=Arial><B>Top 
+                        Links</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT size=1 face=Arial><A 
+                        href="http://www.meego.com/" 
+                        target=_blank>Meego.com</A><BR><A 
+                        href="http://swipe.nokia.com/" target=_blank>MeeGo @ 
+                        Nokia</A><BR><A 
+                        href="http://www.forum.nokia.com/Tools_Docs_and_Code/Tools/Platforms/Maemo/" 
+                        target=_blank>Forum Nokia</A><BR><BR><A 
+                        href="http://nokiaexperts.com/" target=_blank>Nokia 
+                        Experts</A><BR><A href="http://allaboutmeego.com/" 
+                        target=_blank>AllAboutMeego</A><BR><BR><A 
+                        href="http://my-maemo.com/" 
+                        target=_blank>My-Maemo.com</A><BR><A 
+                        href="http://my-symbian.com/" 
+                        target=_blank>My-Symbian.com</A><BR><A 
+                        href="http://store.my-symbian.com/" 
+                        target=_blank>Software Store</A> 
+                  </FONT></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush></FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #60278e 2px dotted; BORDER-LEFT: #60278e 2px dotted; BORDER-TOP: #60278e 2px dotted; BORDER-RIGHT: #60278e 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR>
+            <TABLE cellSpacing=0 cellPadding=1 width=100 align=center>
+              <TBODY>
+              <TR>
+                <TD bgColor=white>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT size=3 face=Arial><B>Support 
+                        Us</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT size=1 face=Arial>Do you like and frequently 
+                        use this website, find it useful and informative? Please 
+                        help us keep it alive FOR YOU. <A 
+                        href="http://my-maemo.com/contact.php?name=support" 
+                        target=_blank>Read more...</A></FONT><BR><BR>
+                        <DIV align=center>
+                        <FORM method=post 
+                        action=https://www.paypal.com/cgi-bin/webscr><INPUT 
+                        name=cmd value=_s-xclick type=hidden><INPUT 
+                        name=hosted_button_id value=5788637 type=hidden><INPUT 
+                        border=0 name=submit 
+                        alt="PayPal - The safer, easier way to pay online!" 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/btn_donate_SM.gif" 
+                        type=image></FORM></DIV></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush></FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #60278e 2px dotted; BORDER-LEFT: #60278e 2px dotted; BORDER-TOP: #60278e 2px dotted; BORDER-RIGHT: #60278e 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE></TD>
+          <TD vAlign=top width=490><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%" align=center>
+              <TBODY>
+              <TR>
+                <TD bgColor=white>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT size=3 face=Arial><B>Discussion Forums - Most 
+                        recent topics</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT size=2 face=Tahoma>
+                        <DIV id=scrollup>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Digia to acquire Qt from Nokia" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44223&amp;sid=41">Digia 
+                        to acquire Qt from Nokia...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="eBuddy XMS" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44219&amp;sid=41">eBuddy 
+                        XMS...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Nokia shutters Qt Brisbane office" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44209&amp;sid=41">Nokia 
+                        shutters Qt Brisbane office...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Overclock the N9" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44199&amp;sid=41">Overclock 
+                        the N9...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Fast wifi/3g connection icon for N9" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44197&amp;sid=41">Fast 
+                        wifi/3g connection icon for N9...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Yess,I can't believe this!!ANOTHER MEEGO DEVICE FROM NOKIA" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44195&amp;sid=41">Yess,I 
+                        can't believe this!!ANOTHER MEEGO DEVICE FROM 
+                        NOKIA...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="App request - Auto sync pics to online storage?" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44189&amp;sid=41">App 
+                        request - Auto sync pics to online storage?...</A> 
+                        </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Solution for Hotmail not working over MFE on N9" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44186&amp;sid=41">Solution 
+                        for Hotmail not working over MFE on N9...</A> 
+                        </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Safe App for Meego with Export option? Like Handy Safe Pro?" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44185&amp;sid=41">Safe 
+                        App for Meego with Export option? Like Handy Safe 
+                        Pro?...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Power button &amp; Flashlight" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44170&amp;sid=41">Power 
+                        button &amp; Flashlight...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Can't Synchronize contacts from Nokia Account" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44168&amp;sid=41">Can't 
+                        Synchronize contacts from Nokia Account...</A> 
+                        </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="music player flaw?" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44164&amp;sid=41">music 
+                        player flaw?...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="KeePassX for Meego Harmattan" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44162&amp;sid=41">KeePassX 
+                        for Meego Harmattan...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="New Version Of Opera - default keyboard stays on" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44161&amp;sid=41">New 
+                        Version Of Opera - default keyboard stays on...</A> 
+                        </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Drop Cache Problem" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44159&amp;sid=41">Drop 
+                        Cache Problem...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title='Create a "Flightradar" application for the N9' 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44158&amp;sid=41">Create 
+                        a "Flightradar" application for the N9...</A> 
+                        </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Sweet.. Jolla founded to bring new Meego devices to market" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44157&amp;sid=41">Sweet.. 
+                        Jolla founded to bring new Meego devices to 
+                        market...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="xskat for the Nokia N9" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44152&amp;sid=41">xskat 
+                        for the Nokia N9...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Protest against Nokia for Killing MeeGo" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44151&amp;sid=41">Protest 
+                        against Nokia for Killing MeeGo...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Bittersweet: N9 gets PR 1.3, community says goodbye to Nokia" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44148&amp;sid=41">Bittersweet: 
+                        N9 gets PR 1.3, community says goodbye to Nokia...</A> 
+                        </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="PR 1.3 released" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44147&amp;sid=41">PR 
+                        1.3 released...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Show week number in the N9 calendar app." 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44145&amp;sid=41">Show 
+                        week number in the N9 calendar app....</A> 
+                        </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Video stream for N9" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44144&amp;sid=41">Video 
+                        stream for N9...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="maybe a silly question, but...." 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44143&amp;sid=41">maybe 
+                        a silly question, but.......</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="N9 Name in WiFi" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44141&amp;sid=41">N9 
+                        Name in WiFi...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="StarFinder for Harmattan" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44140&amp;sid=41">StarFinder 
+                        for Harmattan...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Nokia Car Mode for N9?" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44138&amp;sid=41">Nokia 
+                        Car Mode for N9?...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Screen Protector that actually fits?" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44136&amp;sid=41">Screen 
+                        Protector that actually fits?...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="No WP8 update for existing WP7.5 phones. Time to push the N9" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44135&amp;sid=41">No 
+                        WP8 update for existing WP7.5 phones. Time to push the 
+                        N9...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="VLC for N9" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44134&amp;sid=41">VLC 
+                        for N9...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Can't install certain apps after downloading" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44133&amp;sid=41">Can't 
+                        install certain apps after downloading...</A> 
+                        </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Mee folder issues..." 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44127&amp;sid=41">Mee 
+                        folder issues......</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Can't add new accounts (esp. Skype)" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44126&amp;sid=41">Can't 
+                        add new accounts (esp. Skype)...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Nokia Drive for all Windows Phone 8 smartphones" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44124&amp;sid=41">Nokia 
+                        Drive for all Windows Phone 8 smartphones...</A> 
+                        </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Nokia Suite 3.5" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44123&amp;sid=41">Nokia 
+                        Suite 3.5...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="news aggregation app" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44120&amp;sid=41">news 
+                        aggregation app...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="software problem for my n9" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44112&amp;sid=41">software 
+                        problem for my n9...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" title=wifi 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44111&amp;sid=41">wifi...</A> 
+                        </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Bleep N9 at 23:30" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44110&amp;sid=41">Bleep 
+                        N9 at 23:30...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Request for WiFi Connection" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44109&amp;sid=41">Request 
+                        for WiFi Connection...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Nokia Reaction Bluetooth Headset" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44108&amp;sid=41">Nokia 
+                        Reaction Bluetooth Headset...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Phone Dialer in Landscape mode?" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44107&amp;sid=41">Phone 
+                        Dialer in Landscape mode?...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="N9 - power drainage." 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44105&amp;sid=41">N9 
+                        - power drainage....</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="N9 phone won't show any form of life." 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44104&amp;sid=41">N9 
+                        phone won't show any form of life....</A> 
+                        </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Can I delete this file?" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44093&amp;sid=41">Can 
+                        I delete this file?...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="What's the problem?" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44086&amp;sid=41">What's 
+                        the problem?...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="How to change the password of Terminal" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44077&amp;sid=41">How 
+                        to change the password of Terminal...</A> 
+                        </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="N9 - first impressions" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44072&amp;sid=41">N9 
+                        - first impressions...</A> </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="Punch The Cherry &amp; Kaboom FREE DOWNLOAD" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44070&amp;sid=41">Punch 
+                        The Cherry &amp; Kaboom FREE DOWNLOAD...</A> 
+                        </FONT><BR></DIV>
+                        <DIV class=headline><FONT size=2 face=Tahoma><FONT 
+                        color=red>»</FONT> <A style="COLOR: #00a" 
+                        title="N9 Nokia Sound During Switch On" 
+                        href="http://my-symbian.com/forum/viewtopic.php?t=44069&amp;sid=41">N9 
+                        Nokia Sound During Switch On...</A> 
+                        </FONT><BR></DIV></DIV></FONT></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>We've got over 130,000 members 
+                  and nearly 400,000 posts. <A 
+                  href="http://my-symbian.com/forum/">Join our community 
+                  now!</A></FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #eb008a 2px dotted; BORDER-LEFT: #eb008a 2px dotted; BORDER-TOP: #eb008a 2px dotted; BORDER-RIGHT: #eb008a 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE>
+            <DIV id=content><!-- // b2 loop start --><BR>&nbsp;&nbsp;<IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/date.jpg"> <FONT size=4 
+            face=Arial><B>Sat, 11.08.12</B></FONT><BR><BR><A name=8098></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>StarFinder 
+                        2.0 now also supports Solar System 
+                        objects</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/starfinder_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=StarFinder_Pro_2.0_(+_Solar_System)&amp;fldAuto=1686&amp;faq=32">StarFinder 
+                        Pro</A></B> is an application making it possible to 
+                        quickly and easily track and locate celestial objects in 
+                        the night sky (just turn according to the indications 
+                        shown), and serving as a handy database of astronomical 
+                        data.<BR><BR>In its new version 2.0, in addition to 
+                        tracking/locating stars, constellations, deep sky 
+                        objects, asterisms and meteor shower radiants, the 
+                        program now also supports <B>all planets</B> (+ Pluto), 
+                        the <B>Sun</B> and the <B>Moon</B>, and <B>calculates in 
+                        real time</B> a lot of astronomical data, such as 
+                        rise/set/transit times (and transit altitude), apparent 
+                        magnitude and diameter, distance from the Earth and Sun, 
+                        hour angle, elongation, illumination/phase, right 
+                        ascension and declination, phase angle, and 
+                        more.<BR><BR>If you're interested in astronomy, give it 
+                        a try - it's the only such advanced astronomical 
+                        application made specially for the N9 / N950.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201208#8098">08:27</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8100></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>VPN9C - 
+                        GUI for VPNC vpn 
+                  client</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/vpn9c_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=vpn9c&amp;fldAuto=1801&amp;faq=9">VPN9C</A></B> 
+                        is a graphical user interface for VPNC, for the Nokia N9 
+                        (Harmattan). It is a package which bundles vpnc user 
+                        space vpn client with a launcher GUI.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201208#8100">08:26</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8099></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Widget 
+                        Runtime: launch web apps (widgets) on 
+                        Harmattan</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/widgetruntime_sm.jpg">The 
+                        goal of <B><A 
+                        href="http://my-meego.com/software/applications.php?name=Widget_Runtime&amp;fldAuto=1792&amp;faq=31">Widget 
+                        Runtime</A></B> application is to allow MeeGo users to 
+                        run locally installable web applications (also called 
+                        widgets) as if they were native applications. Currently 
+                        supports running widgets created for Symbian WRT, plain 
+                        W3C (including Tizen) and Opera platforms.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201208#8099">07:19</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><BR>&nbsp;&nbsp;<IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/date.jpg"> <FONT size=4 
+            face=Arial><B>Thu, 09.08.12</B></FONT><BR><BR><A name=8095></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Digia to 
+                        acquire Qt from 
+                  Nokia</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma>
+                        <DIV align=left><IMG hspace=8 vspace=1 align=right 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/qt.jpg"><B>Digia</B> 
+                        today announced that it has signed an agreement to 
+                        <B>acquire Qt software technologies and Qt business from 
+                        Nokia</B> and further extend the cross-platform 
+                        availability of Qt on mobile, embedded and desktop. 
+                        <BR><BR>Following the acquisition Digia becomes 
+                        responsible for all the Qt activities formerly carried 
+                        out by Nokia. These include product development, as well 
+                        as the commercial and open source licensing and service 
+                        business. Following the acquisition, Digia plans to 
+                        quickly enable Qt on Android, iOS and Windows 8 
+                        platforms. One of Digia's key objectives with this 
+                        acquisition is to improve its position within the Qt 
+                        ecosystem by further strengthening Qt's R&amp;D 
+                        capabilities and expanding its reach on many more 
+                        platforms than ever before. As part of the transaction, 
+                        a maximum of 125 Qt people from Nokia will transfer to 
+                        Digia.<BR><BR>Read more @ <A 
+                        href="http://www.digia.com/en/Home/Company/Press/2012/Digia-to-acquire-Qt-from-Nokia/" 
+                        target=_blank>Digia</A> and <A 
+                        href="http://blog.qt.nokia.com/2012/08/09/investment-in-qt-planned-to-continue-digia/" 
+                        target=_blank>qt.nokia.com</A>.</DIV><BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201208#8095">11:17</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><BR>&nbsp;&nbsp;<IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/date.jpg"> <FONT size=4 
+            face=Arial><B>Wed, 08.08.12</B></FONT><BR><BR><A name=8094></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>CloudPrint 
+                        plug-in enables printing to a cloud printer from any N9 
+                        application</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/cloudprint_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=CloudPrint_plug-in&amp;fldAuto=1783&amp;faq=9">CloudPrint 
+                        plug-in</A></B> is a sharing plug-in for the N9 which 
+                        works with the Google CloudPrint service. It enables 
+                        printing to cloud-ready printers from most N9 apps that 
+                        have sharing functions. Take a picture and print to 
+                        cloud printer 
+                        anywhere!<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201208#8094">02:30</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><BR>&nbsp;&nbsp;<IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/date.jpg"> <FONT size=4 
+            face=Arial><B>Sun, 29.07.12</B></FONT><BR><BR><A name=8092></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Nokia Car 
+                        Mode with 
+                Mirrorlink</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/carmode_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=Nokia_Car_Mode_with_Mirrorlink&amp;fldAuto=1733&amp;faq=26">Nokia 
+                        Car Mode</A></B> has been designed for use in-car to 
+                        make calls, navigate or listen to music. Plug the phone 
+                        into infotainment system using USB and enjoy these 
+                        applications on in-car display. For making and receiving 
+                        calls, the phone needs to be paired using Bluetooth with 
+                        the car infotainment system.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201207#8092">23:30</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8079></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>StarFinder 
+                        - quickly and easily locate stars, constellations, 
+                        galaxies, 
+                nebulae...</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/starfinder_sm.jpg">With 
+                        <B><A 
+                        href="http://my-meego.com/software/applications.php?name=StarFinder&amp;fldAuto=1686&amp;faq=32">StarFinder</A></B> 
+                        you can easily locate stars, constellations, galaxies, 
+                        nebulae, star clusters, asterisms, meteor shower 
+                        radiants. Just select the object of your interest and 
+                        the program will instantly show you where in the sky it 
+                        is located. Turn in the direction and look at the 
+                        altitude shown and... there you have it! Useful for both 
+                        naked-eye sky watchers and to aid in quickly positioning 
+                        a telescope. Comes with a handy database of useful 
+                        astronomical information for each supported object, and 
+                        a direct link to related mobile Wikipedia article, 
+                        should you need more details.<BR><BR>.... and stay 
+                        tuned, <B>version 2.0 with full support for tracking / 
+                        locating Solar System objects (all planets, the Sun and 
+                        the Moon) as well as real-time calculation of all 
+                        important data (rise/set/transit, distance from the Sun 
+                        and Earth, apparent magnitude, apparent diameter, 
+                        phase/illumination, hour angle, right ascension and 
+                        declination, elongation, phase angle and more) coming up 
+                        as a free upgrade for all users!</B><BR><BR>For Moon 
+                        observations, please also check <B><A 
+                        href="http://my-meego.com/software/applications.php?name=MoonCalc&amp;fldAuto=1403&amp;faq=32">MoonCalc</A></B>.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201207#8079">10:11</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><BR>&nbsp;&nbsp;<IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/date.jpg"> <FONT size=4 
+            face=Arial><B>Mon, 16.07.12</B></FONT><BR><BR><A name=8091></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Jolla 
+                        signs a deal with Chinese D.Phone 
+                        retailer</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma>
+                        <DIV><IMG hspace=8 vspace=1 align=right 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/jolla.jpg"><B><A 
+                        href="https://twitter.com/jollamobile" 
+                        target=_blank>Jolla</A></B> has signed a deal with 
+                        Chinese retailer D.Phone to deliver its future 
+                        MeeGo-based smartphones to be launched later this year. 
+                        No further details have been revealed at this 
+                        point.</DIV><BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201207#8091">23:50</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><BR>&nbsp;&nbsp;<IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/date.jpg"> <FONT size=4 
+            face=Arial><B>Sun, 15.07.12</B></FONT><BR><BR><A name=8090></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Phone 
+                        Assist - shake to record phone 
+                    calls</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/phoneassist_sm.jpg">With 
+                        <B><A 
+                        href="http://my-meego.com/software/applications.php?name=Phone_Assist&amp;fldAuto=1724&amp;faq=1">Phone 
+                        Assist</A></B> you can start recording a phone call just 
+                        by shaking the phone. It can also record phone calls 
+                        from/to favourite contacts automatically and create 
+                        events in the Calendar when the call ends.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201207#8090">18:19</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8089></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Super SMS 
+                        - schedule, autoreply, remote 
+                    control</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/supersms_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=Super_SMS&amp;fldAuto=1722&amp;faq=1">Super 
+                        SMS</A></B> can set a schedule to send SMS, reply SMS 
+                        and missed calls automatically and forward missed 
+                        call/SMS to others. This app even allows to control your 
+                        N9 through SMS 
+                        commands.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201207#8089">18:07</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><BR>&nbsp;&nbsp;<IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/date.jpg"> <FONT size=4 
+            face=Arial><B>Thu, 12.07.12</B></FONT><BR><BR><A name=8088></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 
+                        face=Arial><B>VideoEditor for 
+                      Harmattan</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/videoeditor_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=VideoEditor&amp;fldAuto=1712&amp;faq=2">VideoEditor</A></B> 
+                        makes it possible to add video clips to a timeline, 
+                        reorder them, trim to adjust transitions within the 
+                        composition. The composition can be previewed and 
+                        exported to a new file. The touch interface allows easy 
+                        editing, zooming and navigation using common gestures 
+                        like taps, drags and pinches.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201207#8088">02:53</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><BR>&nbsp;&nbsp;<IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/date.jpg"> <FONT size=4 
+            face=Arial><B>Sat, 07.07.12</B></FONT><BR><BR><A name=8085></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Jolla - 
+                        ex-Nokia staff form a company and build new MeeGo based 
+                        smartphone OS</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma>
+                        <DIV align=left><IMG hspace=8 vspace=1 align=right 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/jolla.jpg"><B><A 
+                        href="https://twitter.com/JollaMobile" 
+                        target=_blank>Jolla</A></B> is a new project started by 
+                        former Nokia MeeGo staff and leading community members. 
+                        Jolla, an independent company financed by a group of 
+                        international and domestic private investors, continues 
+                        Nokia's work on MeeGo based smartphones and aims to 
+                        create its own MeeGo-based smartphone OS. Watch <A 
+                        href="https://twitter.com/JollaMobile" 
+                        target=_blank>@JollaMobile</A> for further news and 
+                        details.<BR></DIV></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201207#8085">22:39</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8084></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>1700+ 
+                        applications - the biggest and the only complete 
+                        Harmattan Software 
+                    Directory</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><B><A 
+                        href="http://my-meego.com/software/">My-MeeGo Software 
+                        Catalog</A></B> is the biggest and the only COMPLETE 
+                        software directory for the Nokia N9 and N950, listing 
+                        software from all existing sources: the Nokia Store, 
+                        AppsForMeeGo, individual projects. At the moment the 
+                        catalog includes <B>over 1700 applications and games</B> 
+                        and we offer you <B>over 1750 files</B> in our <B><A 
+                        href="http://my-meego.com/downloads/">Downloads</A></B>. 
+                        And all that well organized, with all RSS-feed based 
+                        so-called "apps" filtered out.<BR><BR>Please, help us to 
+                        keep this service up-to-date and alive for you - 
+                        <B>please rate and comment on applications you download 
+                        from this 
+                        website.</B><BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201207#8084">18:21</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8083></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Sharetus - 
+                        share to social and bookmarking 
+                    sites</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/sharetus_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=Sharetus&amp;fldAuto=1706&amp;faq=9">Sharetus</A></B> 
+                        is a plugin to Share UI for sharing to various social 
+                        and bookmarking sites, including: Diaspora*, Facebook, 
+                        Twitter, Google+, LinkedIn, Tumblr, DZone, Ping, FM, 
+                        Delicious, Google Bookmarks, Google Translate, Digg, 
+                        StumbleUpon. It integrates to Share UI, allowing sharing 
+                        from any web 
+                      page.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201207#8083">17:37</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8082></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Scrobbler 
+                        for the built-in Media 
+                    Player</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/scrobbler_sm.jpg"><A 
+                        href="http://my-meego.com/software/search.php?search=Fernando Munoz">Fernando 
+                        Munoz</A> has released <B><A 
+                        href="http://my-meego.com/software/applications.php?name=Scrobbler&amp;fldAuto=1704&amp;faq=2">Scrobbler</A></B> 
+                        for the built in media player of the N9 / N950. It does 
+                        not require any extra applications and currently 
+                        supports Last.fm and Libre.fm.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201207#8082">17:18</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><BR>&nbsp;&nbsp;<IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/date.jpg"> <FONT size=4 
+            face=Arial><B>Wed, 04.07.12</B></FONT><BR><BR><A name=8081></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>PlayMee 
+                        music player</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/playmee_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=PlayMee&amp;fldAuto=1692&amp;faq=2">PlayMee</A></B> 
+                        from <A 
+                        href="http://my-meego.com/software/search.php?search=Michael Zanetti">Michael 
+                        Zanetti</A> is a music player for Harmattan that works 
+                        and looks like the built-in player, but it autostarts 
+                        when Play button is pressed on the headset and preserves 
+                        the 
+                    playlists.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201207#8081">07:15</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><BR>&nbsp;&nbsp;<IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/date.jpg"> <FONT size=4 
+            face=Arial><B>Tue, 03.07.12</B></FONT><BR><BR><A name=8080></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>PR 1.3 
+                        update for the Nokia N9 now 
+                    available</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma>A new Nokia N9 system update, 
+                        <B>40.2012.21-3</B> a.k.a <B>PR1.3</B>, has now started 
+                        rolling out. This software release brings you over 1000 
+                        quality improvements, including Mail, Facebook, and 
+                        Twitter, as well as several small network and 
+                        connectivity improvements. <BR><BR>The update will be 
+                        released in waves during the next few weeks, firstly to 
+                        non-branded variants and later on for other variants as 
+                        well. When an update is available a notification with 
+                        the icon is shown in the Events view. Select the 
+                        notification to view and install the update.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201207#8080">12:40</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><BR>&nbsp;&nbsp;<IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/date.jpg"> <FONT size=4 
+            face=Arial><B>Thu, 28.06.12</B></FONT><BR><BR><A name=8078></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>YouTubeHD 
+                        video 
+              downloader</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/youtubehd_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=YouTubeHD&amp;fldAuto=1681&amp;faq=2">YouTubeHD</A></B> 
+                        offers easy to use touch-interface that allows you to 
+                        view and download YouTube videos to your phone. You can 
+                        read descriptions, watch and download videos from 240p 
+                        to HD 1080p, like/dislike videos, subscribe, add to 
+                        favorite list, watch related videos, post/read comments, 
+                        and 
+                    more.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8078">22:45</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><BR>&nbsp;&nbsp;<IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/date.jpg"> <FONT size=4 
+            face=Arial><B>Thu, 21.06.12</B></FONT><BR><BR><A name=8076></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Front 
+                        camera app with video 
+                    support</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/frontvideo_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=Front_Camera_N9&amp;fldAuto=1658&amp;faq=5">Front 
+                        Camera N9 (Video+)</A></B> allows to take still photos 
+                        and record videos using front (secondary) camera on 
+                        device. It also supports taking shots in 'mirror' 
+                        mode.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8076">18:47</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8075></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Tweetian - 
+                        new Twitter client for 
+                    Harmattan</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/tweetian_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=Tweetian&amp;fldAuto=1657&amp;faq=9">Tweetian</A></B> 
+                        is a feature-rich Twitter client, developed using 
+                        Qt/QML. With the intense use of Qt Quick Component, 
+                        Tweetian comes with a fluid and native UI.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8075">18:23</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8074></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Nokia 
+                        Suite 3.5 Beta now supports the Nokia 
+                      N9</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma>Nokia Beta Labs has released <B>Nokia Suite 
+                        3.5 Beta</B> for Windows (v3.5.14), which now supports 
+                        the Nokia N9. It allows Nokia N9 (and N950) owners to 
+                        copy content between the phone and computer (including 
+                        contacts and SMS backup / sync) and Internet tethering. 
+                        It can be downloaded from <B><A 
+                        href="http://betalabs.nokia.com/apps/nokia-suite-beta" 
+                        target=_blank>here</A></B>.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8074">08:46</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8073></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Function 
+                        keys for the 
+                  X-Terminal</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/mtermite_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=Function_keys_for_Terminal&amp;fldAuto=1655&amp;faq=25">Function 
+                        Keys for MeeGo Terminal</A></B> adds function keys (F1 - 
+                        F12) to the X-Terminal on-screen keys. You can enable 
+                        them by swiping horizontally in the terminal when not in 
+                        the Copy and Paste 
+                        mode.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8073">08:23</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8072></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Shopper - 
+                        eBay client for 
+                  Harmattan</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/shopper_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=Shopper&amp;fldAuto=1653&amp;faq=1">Shopper</A></B> 
+                        is a QML based eBay client. It supports browsing and 
+                        searching products, viewing categories, item details, 
+                        user detail, addition and removal in watch list. It is 
+                        aimed to be a full featured eBay client for the Symbian 
+                        and MeeGo 
+                      platform.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8072">08:00</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8070></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Chat to 
+                        e-mail 
+              forwarder</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/msgtomail_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=MsgToMail_Forwarder&amp;fldAuto=1651&amp;faq=9">MsgToMail 
+                        Forwarder</A></B> by <A 
+                        href="http://my-meego.com/software/search.php?search=Nicolai Hess">Nicolai 
+                        Hess</A> is a chat-to-email forwarder, forwarding 
+                        chat-messages to an e-mail address.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8070">07:36</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8069></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Copilot / 
+                        GeePS2 - native Google Maps 
+                    client</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/copilot_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=Copilot_(aka_GeePS2)&amp;fldAuto=1648&amp;faq=4">Copilot 
+                        (aka GeePS2)</A></B> by <A 
+                        href="http://my-meego.com/software/search.php?search=Felipe Crochik">Felipe 
+                        Crochik</A> is a native client for Google Maps with 
+                        places/business search and directions. Offers a clean 
+                        user interface to maximize use of the small screen and 
+                        quick access to all features.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8069">06:54</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8068></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Free image 
+                        watermarking 
+              tool</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/qtwatermark_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=Qt_Watermark&amp;fldAuto=1640&amp;faq=5">Qt 
+                        Watermark</A></B> is a free watermarking tool written in 
+                        Qt/QML, with 6 preset watermark options. Users can 
+                        customize the watermark text, font, font color, opacity, 
+                        size, position and rotation of the watermark.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8068">04:30</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8067></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Blob - 
+                        Blogger client for 
+                    Harmattan</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/blob_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=Blob&amp;fldAuto=1638&amp;faq=9">Blob</A></B> 
+                        is a free Blogger client for Harmattan allowing you to 
+                        read, edit, create and delete posts and comments, add 
+                        labels, set custom publishing date and time in posts. It 
+                        has a HTML5 enabled post viewer and convenient rich text 
+                        editor.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8067">04:11</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8066></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>NFC 
+                        Keyring - password wallet for the 
+                    N9</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/nfckeyring_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=NFC_Keyring&amp;fldAuto=1634&amp;faq=16">NFC 
+                        Keyring</A></B> is a password wallet that can store your 
+                        pincodes / passwords on your N9. You can use TAGs like 
+                        Bus, Access card or similar, as the "Master Key". 
+                        Nothing is stored in the TAG itself, it only reads the 
+                        public "Serialnumber" from your TAG and uses it as your 
+                        masterkey. The passwords are then stored using AES 
+                        encryption on your Nokia N9.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8066">03:32</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><BR>&nbsp;&nbsp;<IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/date.jpg"> <FONT size=4 
+            face=Arial><B>Wed, 20.06.12</B></FONT><BR><BR><A name=8065></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>MTermite - 
+                        enhanced Terminal 
+                  emulator</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/mtermite_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=MTermite&amp;fldAuto=1627&amp;faq=25">MTermite</A></B> 
+                        is a terminal emulator based on the MeeGo Terminal with 
+                        enhanced usability features for more convenient use on 
+                        the Nokia 
+                    N9.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8065">19:12</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8064></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Presence 
+                        VNC - touchscreen friendly VNC 
+                    client</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/presencevnc_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=Presence_VNC&amp;fldAuto=1626&amp;faq=9">Presence 
+                        VNC</A></B> from <A 
+                        href="http://my-meego.com/software/search.php?search=QML Productions">QML 
+                        Productions</A> is a touchscreen friendly VNC client for 
+                        the Nokia N9 and N950 with virtual keyboard support. 
+                        This version does not support encryption of the 
+                        connection.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8064">19:04</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8071></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Nokia City 
+                        Lens - augmented reality for the 
+                    N9</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><B><A 
+                        href="http://my-meego.com/software/applications.php?name=City_Lens&amp;fldAuto=1652&amp;faq=4">Nokia 
+                        City Lens</A></B> is a fun and easy way to discover what 
+                        is around you. Simply launch the app on your phone and 
+                        City Lens will display the points of interests in the 
+                        Camera viewfinder view / List view.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8071">07:36</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><BR>&nbsp;&nbsp;<IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/date.jpg"> <FONT size=4 
+            face=Arial><B>Sun, 10.06.12</B></FONT><BR><BR><A name=8063></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Pixelate 
+                        Privacy - anonymize your 
+                    photos</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/pixelate_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=Pixelate_Photo_Privacy&amp;fldAuto=1619&amp;faq=5">Pixelate 
+                        Photo Privacy</A></B> from <A 
+                        href="http://my-meego.com/software/search.php?search=Harald Meyer">Harald 
+                        Meyer</A> allows you to easily share pictures with 
+                        sensitive details, such as faces, unwanted adveristing, 
+                        etc., by covering these details. Sensitive areas can be 
+                        covered with solid color or a professional looking 
+                        pixelize effect. The "anonymized" pictures can be 
+                        directly uploaded to Facebook, Flickr, Picasa, and 
+                        Twitter, or just saved to the gallery.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8063">18:43</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8061></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Camdrive - 
+                        your car's black 
+                box</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/camdrive_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=Camdrive&amp;fldAuto=1616&amp;faq=26">Camdrive</A></B> 
+                        by <A 
+                        href="http://my-meego.com/software/search.php?search=Tomasz Pieniazek">Tomasz 
+                        Pieniazek</A> transforms your N9 into a car black box. 
+                        It stores video, car coordinates, speed and 
+                        accelerometer data, plays video while showing useful 
+                        information, detects car collision and enables to 
+                        quickly call emergency service, friend or to send 
+                        defined text message to someone, warns about exceeding 
+                        your defined speed limit, stores the last minutes of the 
+                        trip, and many 
+                        more...<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8061">18:22</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8060></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Photo 
+                        watermarking application for 
+                      Harmattan</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/watermark_sm.jpg">With 
+                        <B><A 
+                        href="http://my-meego.com/software/applications.php?name=Watermark_Photo&amp;fldAuto=1615&amp;faq=5">Watermark 
+                        Photo</A></B> from <A 
+                        href="http://my-meego.com/software/search.php?search=Harald Meyer">Harald 
+                        Meyer</A> you can watermark your images with text, 
+                        timestamps, pictures, QR codes, and signatures. It ships 
+                        with different stamps ready to use, fonts, color, and 
+                        opacity can be modified. Scale, rotate, and move 
+                        watermarks easily with touch gestures and upload the 
+                        final image directly to Facebook, Flickr, Picasa, and 
+                        Twitter.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8060">18:00</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8059></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Rocket - 
+                        Twitter client for the N9 / 
+                    N950</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/rocket_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=Rocket&amp;fldAuto=1614&amp;faq=9">Rocket</A></B> 
+                        by <A 
+                        href="http://my-meego.com/software/search.php?search=Webpoint Studio">Webpoint 
+                        Studio</A> is a new full-featured Twitter client for the 
+                        Harmattan 
+                      platform.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8059">17:49</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8058></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>ClipBook - 
+                        Clipboard history 
+                  manager</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/clipbook_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=ClipBook&amp;fldAuto=1611&amp;faq=1">ClipBook</A></B> 
+                        from <A 
+                        href="http://my-meego.com/software/search.php?search=Anand Bibek">Anand 
+                        Bibek</A> is a Clipboard History manager. Normally, you 
+                        can only access the last item you copied, but ClipBook 
+                        lets you access all the text items you cut, copied and 
+                        pasted on your phone since launching this program. Just 
+                        start the application, and cut / copy / paste as much as 
+                        you want. This app will save full history.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8058">17:13</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8062></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Front 
+                        Camera picture taking application for the 
+                        N9</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/frontcamera_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=Front_Camera&amp;fldAuto=1617&amp;faq=5">Front 
+                        Camera</A></B> by <A 
+                        href="http://my-meego.com/software/search.php?search=Vesuri">Vesuri</A> 
+                        is a simple application for taking still photos with the 
+                        front camera. The photos are stored in the default photo 
+                        location.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8062">16:22</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8057></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>SkyDrive 
+                        client for 
+                Harmattan</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/skyfiles_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=SkyFiles&amp;fldAuto=1610&amp;faq=9">SkyFiles</A></B> 
+                        is a SkyDrive client for Harmattan smartphones allowing 
+                        to easily upload and download your images, photos, 
+                        videos and documents to your SkyDrive.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8057">12:41</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><BR>&nbsp;&nbsp;<IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/date.jpg"> <FONT size=4 
+            face=Arial><B>Wed, 06.06.12</B></FONT><BR><BR><A name=8056></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Grrok - 
+                        Google Reader App for the N9 / 
+                    N950</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/grrok_sm.jpg"><B><A 
+                        href="http://my-meego.com/software/applications.php?name=Grrok&amp;fldAuto=1608&amp;faq=9">Grrok</A></B> 
+                        from <B>Jon Levell</B> Google Reader App for the Nokia 
+                        N9 / N950 written in QML/Javascript. It is still in 
+                        development, but already now it is quite usable. Current 
+                        features include easy to use interface (choose 
+                        categories/feeds/entries from the list), mark entries 
+                        Read/Unread or mark whole feed read, open the current 
+                        entry in a 
+                      browser.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8056">06:14</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --><A 
+            name=8054></A>
+            <DIV align=center>
+            <TABLE cellSpacing=0 cellPadding=5 width="97%">
+              <TBODY>
+              <TR>
+                <TD bgColor=white width="100%">
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Mustr - 
+                        download wallpaper patterns for the Lock 
+                        screen</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN id=intelliTXT><!--INFOLINKS_ON--><FONT size=2 
+                        face=Tahoma><IMG hspace=8 vspace=1 align=left 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/mustr_sm.jpg">With 
+                        <B><A 
+                        href="http://my-meego.com/software/applications.php?name=Mustr&amp;fldAuto=1604&amp;faq=5">Mustr</A></B> 
+                        from <A 
+                        href="http://my-meego.com/software/search.php?search=Thomas Perl">Thomas 
+                        Perl</A> you can browse wallpaper patterns from 
+                        COLOURlovers.com and download them to your device to use 
+                        as lock screen 
+                        image.<BR></FONT><!--INFOLINKS_OFF--></SPAN></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush><FONT size=1 face=Arial>&nbsp;<FONT 
+                  color=grey size=1 face=Arial>Posted by <SPAN><A 
+                  href="mailto:info@My-Symbian.com.no.spam">Michal Jerz</A> 
+                  </SPAN>@ <A 
+                  href="http://my-meego.com/index.php?m=201206#8054">04:17</A> 
+                  in <A title="category: MeeGo" 
+                  href="http://my-meego.com/?cat=30"><SPAN 
+                  class=storyCategory>MeeGo</SPAN></A> category</FONT> </FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #0099cc 2px dotted; BORDER-LEFT: #0099cc 2px dotted; BORDER-TOP: #0099cc 2px dotted; BORDER-RIGHT: #0099cc 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR></DIV><!-- // this is just the end of the motor - don't touch that line either :) --></DIV>
+            <P class=centerP><FONT size=1 face=Arial>Generated for you in 0.164 
+            seconds.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A 
+            href="http://my-meego.com/#top">Top of page</A></FONT></P></TD>
+          <TD vAlign=top width=160><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR>
+            <TABLE cellSpacing=0 cellPadding=1 width=160 align=center>
+              <TBODY>
+              <TR>
+                <TD bgColor=white>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT color=#eb008a size=3 face=Arial><B>Site 
+                        Map</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <TABLE>
+                          <TBODY>
+                          <TR>
+                            <TD><FONT size=1 face=Verdana><IMG alt="" 
+                              src="MyMeeGo-Harmattan_Nokia-N9_N950_files/point.gif" 
+                              width=9 height=9><A 
+                              title="Latest MeeGo news and announcements" 
+                              href="http://my-meego.com/index.php">Home / Latest 
+                              News</A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=Verdana><IMG alt="" 
+                              src="MyMeeGo-Harmattan_Nokia-N9_N950_files/point.gif" 
+                              width=9 height=9><A 
+                              title="Detailed technical specifications of MeeGo Smartphones" 
+                              href="http://my-meego.com/compare.php">Technical 
+                              specifications</A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=Verdana><IMG alt="" 
+                              src="MyMeeGo-Harmattan_Nokia-N9_N950_files/point.gif" 
+                              width=9 height=9><A 
+                              title="Full  catalog of MeeGo Harmattan applications and games" 
+                              href="http://my-meego.com/software/index.php"><B>Software 
+                              Catalog</B></A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=Verdana><IMG alt="" 
+                              src="MyMeeGo-Harmattan_Nokia-N9_N950_files/point.gif" 
+                              width=9 height=9><A 
+                              title="Freeware and shareware downloads for MeeGo Harmattan" 
+                              href="http://my-meego.com/downloads/index.php">Harmattan 
+                              Downloads</A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=Verdana><IMG alt="" 
+                              src="MyMeeGo-Harmattan_Nokia-N9_N950_files/point.gif" 
+                              width=9 height=9><A 
+                              title="Useful tips and answers to frequent questions" 
+                              href="http://my-meego.com/faq/index.php">FAQ &amp; 
+                              Tips</A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=Verdana><IMG alt="" 
+                              src="MyMeeGo-Harmattan_Nokia-N9_N950_files/point.gif" 
+                              width=9 height=9><A 
+                              title="Reviews of selected MeeGo Tablets and Smartphones" 
+                              href="http://my-meego.com/reviews.php">Reviews</A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=Verdana><IMG alt="" 
+                              src="MyMeeGo-Harmattan_Nokia-N9_N950_files/point.gif" 
+                              width=9 height=9><B><A 
+                              title="MeeGo Discussion Forum" 
+                              href="http://my-symbian.com/forum/">Discussion 
+                              Forum</A></B></FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush></FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #60278e 2px dotted; BORDER-LEFT: #60278e 2px dotted; BORDER-TOP: #60278e 2px dotted; BORDER-RIGHT: #60278e 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR>
+            <DIV align=center>
+            <SCRIPT type=text/javascript><!--
+google_ad_client = "pub-7347402540930999";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "text_image";
+google_ad_channel ="9617965112";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_url = "000000";
+//--></SCRIPT>
+
+            <SCRIPT type=text/javascript 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/show_ads.js">
+</SCRIPT>
+            </DIV><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR>
+            <TABLE cellSpacing=0 cellPadding=1 width=160 align=center>
+              <TBODY>
+              <TR>
+                <TD bgColor=white>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT size=3 face=Arial><B>New MeeGo 
+                        Downloads</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT color=black size=1 face=Arial>
+                        <TABLE>
+                          <TBODY>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=StarFinder Pro 2.0 (+ Solar System)">StarFinder 
+                              Pro 2.0 (+ Solar System) </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=Widget Runtime">Widget 
+                              Runtime BETA</A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=Mapsi">Mapsi 
+                              </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=Dfilebrowser">Dfilebrowser 
+                              </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=Medard">Medard 
+                              </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=Remember">Remember 
+                              </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=vpn9c">vpn9c 
+                              </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=MoonCalc">MoonCalc 
+                              </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=Body Transformer">Body 
+                              Transformer </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=Flixstar - Movies">Flixstar 
+                              - Movies </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=Galaxy Invasion">Galaxy 
+                              Invasion </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=CloudPrint plug-in">CloudPrint 
+                              plug-in </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=Thamara">Thamara 
+                              </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=USSD Notes">USSD 
+                              Notes </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=Interval Timer QX">Interval 
+                              Timer QX </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=Mega Smileys">Mega 
+                              Smileys </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=Feed The Chicks">Feed 
+                              The Chicks </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=MeeVaTr">MeeVaTr 
+                              </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=Nokia Tennis">Nokia 
+                              Tennis </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=Missile Attack">Missile 
+                              Attack </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=FruitGo">FruitGo 
+                              </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=Stories">Stories 
+                              Free</A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=My ToDos">My 
+                              ToDos </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=QRemoteControl 2">QRemoteControl 
+                              2 </A></FONT></TD></TR>
+                          <TR>
+                            <TD><FONT size=1 face=ARIAL><A 
+                              href="http://my-meego.com/downloads/search.php?name=Mega Avatars">Mega 
+                              Avatars </A></FONT></TD></TR></TBODY></TABLE>
+                        <STYLE>#rss-item {
+	MARGIN-TOP: 10px; PADDING-LEFT: 3px; FONT-FAMILY: Verdana; MARGIN-BOTTOM: 1px; FONT-SIZE: 9px
+}
+#rss-item IMG {
+	VERTICAL-ALIGN: top; MARGIN-RIGHT: 5px
+}
+H3 {
+	WIDTH: 220px
+}
+</STYLE>
+
+                        <DIV id=rss-item><A 
+                        href="http://my-meego.com/downloads/harmattan_downloads.xml" 
+                        target=_blank><IMG border=0 
+                        src="MyMeeGo-Harmattan_Nokia-N9_N950_files/rss2.gif"><B>New 
+                        Downloads via 
+                  RSS</B></A></DIV></FONT></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush></FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #60278e 2px dotted; BORDER-LEFT: #60278e 2px dotted; BORDER-TOP: #60278e 2px dotted; BORDER-RIGHT: #60278e 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR><IMG 
+            src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR>
+            <TABLE cellSpacing=0 cellPadding=1 width=160 align=center>
+              <TBODY>
+              <TR>
+                <TD bgColor=white>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <DIV><FONT size=3 face=Arial><B>Mobile 
+                        blackjack</B></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=storyContent>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT size=1 face=Arial><A 
+                        href="http://www.playunited.com/online-blackjack/" 
+                        target=_blank>Mobile blackjack</A>, slots, video poker 
+                        and more are available at 
+                    PlayUnited.com.<BR></FONT></TD></TR></TBODY></TABLE></DIV></TD></TR>
+              <TR>
+                <TD bgColor=white>
+                  <DIV class=rightFlush></FONT>
+                  <HR 
+                  style="BORDER-BOTTOM: #60278e 2px dotted; BORDER-LEFT: #60278e 2px dotted; BORDER-TOP: #60278e 2px dotted; BORDER-RIGHT: #60278e 2px dotted" 
+                  color=#ffffff SIZE=2>
+                  </DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+      <DIV align=center><IMG 
+      src="MyMeeGo-Harmattan_Nokia-N9_N950_files/odstep.gif"><BR>
+      <SCRIPT type=text/javascript><!--
+google_ad_client = "pub-7347402540930999";
+google_ad_slot = "8137181296";
+google_ad_width = 728;
+google_ad_height = 90;
+google_color_link = "0000FF";
+google_color_border = "FFFFFF";
+google_color_url = "000000";
+
+//-->
+</SCRIPT>
+
+      <SCRIPT type=text/javascript 
+      src="MyMeeGo-Harmattan_Nokia-N9_N950_files/show_ads.js">
+</SCRIPT>
+      </DIV></TD></TR>
+  <TR vAlign=middle borderColorLight=#83a3cb borderColorDark=#83a3cb 
+  borderColor=#83a3cb>
+    <TD vAlign=middle>
+      <DIV align=center><SPAN id=nointelliTXT><FONT color=black size=1 
+      face=Arial><B>MeeGo, Maemo, Nokia, Intel and all related marks and logos 
+      are trade marks of their respective copyright owners<BR>This website is 
+      not in any way endorsed or supported by Nokia or Intel.&nbsp;&nbsp;&nbsp; 
+      (C) 1999-2011 My-MeeGo.com -- All Rights 
+    Reserved</B></FONT></SPAN></DIV></TD></TR></TBODY></TABLE>
+<MARQUEE direction=right scrollAmount=10 scrollDelay=200><FONT color=#302d2d 
+size=-2>MeeGo Nokia N9 N950 Harmattan Qt Fremantle Hildon Maemo Tablet Intel 
+AppUp AllAboutMeeGo MeeGoExperts Linux free software download N9 apps N9 
+games</FONT></MARQUEE><!-- start Vibrant Media IntelliTXT Tooltip style sheet -->
+<STYLE type=text/css>.iTt {
+	BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid; PADDING-BOTTOM: 2px; BACKGROUND-COLOR: lightyellow; FONT-STYLE: normal; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; FONT-FAMILY: Verdana, Arial, Helvetica; COLOR: black; FONT-SIZE: 11px; BORDER-TOP: black 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: black 1px solid; PADDING-TOP: 2px
+}
+</STYLE>
+<!-- end Vibrant Media IntelliTXT style sheet --><!-- start Vibrant Media IntelliTXT script section -->
+<SCRIPT type=text/javascript 
+src="MyMeeGo-Harmattan_Nokia-N9_N950_files/front.js"></SCRIPT>
+<!-- end Vibrant Media IntelliTXT script section --></BODY></HTML>

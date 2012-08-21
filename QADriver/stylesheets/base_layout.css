@@ -1,0 +1,279 @@
+﻿/***********************************************************************
+    RESET
+***********************************************************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, 
+code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td 
+	        {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; background: transparent; }
+body        {line-height: 1;}
+ol, ul      {list-style: none;}
+blockquote, q {	quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after 
+            {content: '';
+	        content: none;}
+
+/* remember to define focus styles! */
+:focus      { outline: 0;}
+
+/* remember to highlight inserts somehow! */
+ins         {text-decoration: none;}
+del         {text-decoration: line-through;}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table       {border-collapse: collapse; border-spacing: 0;}
+
+/***********************************************************************
+    BASE TAGS
+***********************************************************************/
+ul              {margin:0 0 12px 27px;}
+p               {margin:0.25em 0 15px;}
+ul p            {margin:0;}
+ul li p         {padding:3px;}
+h1              {margin:0 0 20px 0;}
+h2              {margin:25px 0 25px 0;}
+h3              {margin:5px 0;}
+h4              {margin-bottom:9px;}
+h5              {margin-bottom:7px;}
+h6              {margin-bottom:7px;}
+h6.greenText    {margin:5px 0;}
+
+
+/***********************************************************************
+    HELPER CLASSES
+***********************************************************************/
+.clear          {clear:both;}
+.hidden         {display:none;}
+.left,
+.float_left     {display:inline; float:left;}
+.right,
+.float_right    {display:inline; float:right;}
+.left_indent    {margin-left:20px;}
+
+
+/* Global Clear Float Class */
+.cf:after       {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+.cf             {display: inline-block;}
+html[xmlns] .cf {display: block;}
+* html .cf      {height: 1%;}
+
+/*buttons*/
+.greenbutton, 
+.bluebutton, 
+.redbutton, 
+.greybutton,
+.greenbutton span, 
+.bluebutton span, 
+.redbutton span, 
+.greybutton span        {display:table-cell;}
+
+.greenbutton, 
+.bluebutton, 
+.redbutton,
+.greenbutton span, 
+.bluebutton span, 
+.redbutton span,
+.greybutton span        {height:22px;}
+.greybutton             {height:25px;}
+
+.greenbutton span, 
+.bluebutton span, 
+.redbutton span         {padding:2px 10px 7px 10px; }
+.greybutton span        {padding:3px 20px 7px 10px;}
+
+
+/***********************************************************************
+    BASE LAYOUT
+***********************************************************************/
+html, body                  {height:100%;}
+#accessibility              {position: absolute; left: -9999px; font-size: 1px; overflow:hidden;}
+#top_bkg                    {clear:both;}
+#content_bkg, 
+#base_page_footer, 
+#masthead_search_wrapper    {width:984px; margin:0 auto;}
+#base_page_footer           {height:131px;}
+#basePageFrame              {height:100%; padding:0 12px 0 14px; }
+#baseHeader                 {height:131px;padding:0 25px; position:relative !important; z-index:1000;}
+#body_indented,
+.body_indented              {margin:0 20px;}
+
+/***********************************************************************
+    SECTION: MASTHEAD
+***********************************************************************/
+#baseHeader .masthead_header_container  {width:100%; display:inline-block; height: 70px;}
+#header_left                            {width: 45%; display:inline; float:left;}
+#header_right                           {width: 45%; display:inline; float:right; text-align:right; padding:6px 0 0 0;}
+#header_windows_logo                    {margin: 34px 0 14px 1px;}
+
+#mastheadLinks                          {width:290px; width:290px!important; line-height:20px; margin-right:3px; display:inline; float:right;}  /*we may need to move the width to IE-specific stylesheets*/
+.masthead_country                       {margin-right:10px;}
+.masthead_pipe                          {padding:0 8px;}
+
+/***********************************************************************
+    SECTION: NAVIGATION
+***********************************************************************/
+#wol_header_nav						{height: 32px;}
+
+/*productLevelNavigation*/
+.product_navigation_wrapper         {height:30px; padding-left:6px;}
+ul.product_nav_single,
+ul.product_nav_double               {display:block; clear:both; margin:0; list-style:none;}
+ul.product_nav_double               {height:40px; text-align:left; padding-top:11px; padding-left:20px;}
+ul.product_nav_single li,
+ul.product_nav_double li            {display:inline; float:left; overflow:hidden;}
+ul.product_nav_single li            {padding-right:24px; line-height:1.5em;}
+ul.product_nav_single li.lastItem   {padding-right:0;}
+ul.product_nav_double li            {width:153px;}
+ul.product_nav_double li.lastItem   {padding-right:0; width:130px;}
+
+/*tabNavigation*/
+ul.tab_nav, 
+ul.tab_nav_double,
+ul.tab_nav_full                 {list-style:none; padding-left:20px; margin:0 0 15px 0;}
+
+ul.tab_nav, 
+ul.tab_nav_double               {width:687px;}
+ul.tab_nav_full                 {width:918px;}
+ul.tab_nav                      {height:34px; vertical-align:middle;}
+ul.tab_nav_double               {height:46px;}
+
+ul.tab_nav li, 
+ul.tab_nav_double li            {display:inline; float:left; margin-top:3px; }
+
+ul.tab_nav li                   {height:30px; padding:0 8px; line-height:25px; }
+ul.tab_nav_double li            {height:33px; padding:9px 8px 0 8px;}
+
+ul.tab_nav li.activeTab, 
+ul.tab_nav_double li.activeTab  {height:33px; margin-top:0;}
+
+ul.tab_nav li.activeTab         {line-height:30px;}
+ul.tab_nav_double li.activeTab  {padding-top:12px;}
+
+.tab_navItemCount_7 li, 
+.tab_nav_doubleItemCount_7 li   {width:auto;}
+.tab_navItemCount_6 li, 
+.tab_nav_doubleItemCount_6 li   {width:100px;}
+.tab_navItemCount_5 li,         
+.tab_nav_doubleItemCount_5 li   {width:110px;}
+.tab_navItemCount_4 li, 
+.tab_nav_doubleItemCount_4 li   {width:115px;}
+.tab_navItemCount_3 li, 
+.tab_nav_doubleItemCount_3 li   {width:120px;}
+.tab_navItemCount_2 li, 
+.tab_nav_doubleItemCount_2 li, 
+.tab_navItemCount_1 li, 
+.tab_nav_doubleItemCount_1 li   {width:125px;}
+
+/*Pagination*/
+#pageNav                        {margin:15px 0 30px 30px;}
+#pageNav ul.pagination_nav, 
+#pageNav div                    {height:20px; line-height:20px;}
+#pageNav ul.pagination_nav      {margin:0;}
+#pageNav ul.pagination_nav li   {display:inline; float:left; padding-right:15px;}
+
+
+
+
+/***********************************************************************
+    SECTION: SITEMAP
+***********************************************************************/
+.sitemap                    {margin:10px 0 0 0; min-height:250px; padding-bottom:50px;}
+.sitemap_nav                {clear:both; width:945px; padding-top:6px; margin:20px 0px 12px 0px;}
+.sitemap_explore            {height:30px; line-height:25px;}
+#exploreGraphic             {width:58px; height:25px; display:inline; float:left;}                  
+#exploreText                {height:25px; display:inline; float:left;}                              
+#siteIndexText              {height:25px; margin-left:55px; text-align:right;display:inline; float:right;}
+.sitemap_columns            {padding:0 20px;}   
+.siteColumn                 {width:165px; margin:0 0 0 20px; display:inline; float:left;}            
+#siteColumn1                {margin:0;}
+
+.sitemap ul                 {margin:0 0 10px 0;}
+.sitemap li                 {}
+.sitemap li p               {margin:0;}
+
+/***********************************************************************
+    SECTION: FOOTER
+***********************************************************************/
+#footer_internal            {padding:61px 40px 0 39px;}
+#footer_windows             {width:105px; margin-left: 1px; padding-top:4px; clear:both; display:inline; float:left;}               
+#footer_microsoft           {width:84px; margin:3px 0 0 10px; font-size:9px; color:#000; display:inline; float:right;}             
+#footer_microsoft img       {margin-top:8px;}
+#footer_links               {width:450px; margin-right:50px; text-align: right; padding-top:7px; display:inline; float:right;}     
+#footer_ms_corp             {float:right; margin-top:13px; font-size:9pt; color:#333;}
+
+/***********************************************************************
+    SECTION: FAQ
+***********************************************************************/
+
+.faq-container                  {width:700px; clear:both; margin:0 0 20px 0;}
+.faq-hide, .faq-show            {clear:both;}
+.faq-question                   {padding:10px 10px 10px 5px;}
+.faq-question-last              {padding:10px 10px 14px 5px;}
+.faq-answer                     {padding:5px; min-height:68px;}
+.faq-hide .faq-answer           {display:none;}
+.faq-show .faq-answer           {display:block;}
+
+p.faq-title                     {height:32px; line-height:32px; margin:0; padding:0 0 0 5px; display:inline; float:left; }
+.faq-container p.toggle         {height:32px; line-height:32px; margin:0; padding:0 10px 0 0;}
+.faq-question p, 
+.faq-question-last p            {                               margin:0; padding:0; line-height:1.4em;}
+.faq-show .faq-question p, 
+.faq-show .faq-question-last p,
+.faq-hide .faq-question p, 
+.faq-hide .faq-question-last p  {                                         padding-left:15px;}
+.faq-answer p                   {                               margin:0 0 10px 0; padding:0 0 0 15px; line-height:1.4em;}
+.faq-answer li                  {                                                  padding:3px;}
+.faq-answer li p                {                               margin:0; padding:0; line-height:1.5em;}
+
+
+/***********************************************************************
+    SECTION: DATATABLE
+***********************************************************************/
+.datatable                          {            margin-bottom:30px;}
+.datatable td                       {                      padding:5px;}
+.datatable td.borderTopFadeLeft     {height:1px; margin:0; padding:0; font-size:1px; text-align:right;}
+.datatable td.borderTopFadeRight    {height:0;   margin:0; padding:0; font-size:1px;}
+.datatable td.borderTop             {height:1px; margin:0; padding:0; font-size:1px;}
+.datatable .header p                {            margin:0; padding:0;}
+.datatable h5                       {            margin:0; padding:0;}  /*this might be subsite specific!*/
+
+/***********************************************************************
+    MASTER: FULL WIDTH
+***********************************************************************/
+#productsRowFirst           {width:958px; margin:30px 0 0 0; padding:0; clear:both; min-height:200px;}      /*from article.css*/
+
+
+/***********************************************************************
+    MASTER: BASE ARTICLE
+***********************************************************************/
+#article_left               {width:707px; min-height:850px; display:inline; float:left; margin-right:31px;}
+#article_right              {width:180px; min-height:400px; display:inline; float:left;}
+
+/*content footer*/
+.content_footer             {width:705px; height:40px; clear:both; padding-top:10px; margin:20px 0 20px 0;}
+.media_types                {                               display:inline; float:left;}
+.media_types .print,
+.media_types .email         {display:inline; float:left;}
+.media_types .print         {padding:0 10px 0 20px; margin-left:10px;}
+.media_types .email         {padding:0 0 0 20px;}
+
+/*right rail*/
+.call_to_action             {min-height:65px; margin:20px 0 0 0; padding:7px 0 0 0;}
+.call_to_action .space      {width:70px; height:50px; display:inline; float:right;}
+.crosslink h6.greenTextTop  {margin:5px 0 0 0; padding-top:18px; }
+.crosslink h6.greenText     {margin:0;}
+.crosslink p, 
+.call_to_action p           {margin:10px 0 0 0;}
+.crosslink_divider          {margin:0 0 18px 0; padding:5px 0 0 0;}
+.adDefault                  {width:180px; height:150px;}
+
+
+/*horizontal ul*/
+.horizontal                 {width:700px;margin:0; }
+.horizontal li              {display:inline; float:left; list-style-type:none;}
+
+
+
+
+
+
+
