@@ -39,34 +39,19 @@
                 </li>
             </ol>
         </li>
-        <li>Execution (<code>validCaseURLs[]</code>, <code>invalidCaseURLs[]</code>)
+        <li>Execution (<code>validCaseURLs[]</code>, <code>invalidCaseURLs[]</code>) 
             <ol>
-                <li>Read testcase URI from TestCases[i]. </li>
-                <li>Verify validity using Pre-fetch javascript snippet. </li>
-                <ul>
-                    <li> Increment <code>count of invalid URLs (Say, k</code>), and </li>
-                    <li>assign the URL as string to array "<code>InvalidTests[k]</code>"</li>
-                    <ol>
-                </ul>
-            </ol>
-            <ol>
-            </ol>
-            <ol>
-                2.3.1 If referenced resource fetches a proper response then perform these steps.
-                Increment count of valid URLs (Say, i), and assign the URL as string to array "<code>ValidTests[i]</code>"
-            </ol>
-            <ol>
-                2.3.2. Else, if reference is invalid/undefined (Not applicable in context of Application-Layer.
-                A testcase can be asserting negative scenario thereby an intentional malfunctioning
-                might take place. Example, testing HTTP response code 404 handler.)&nbsp;
-                <li>An optional step to verify "c = i + k" can be used for tallying total testcases
-                    count. </li>
-                <li>Browsing context - Individual testcase scope provided using iFrame/Window. </li>
-                <li>"Preferences" either using JSON-format/hardcoded, contains "SnapshotCount". It represents
-                    the number of Browsing-contexts maintained for executing testcases. "ContextType"
-                    is a preference, that indicates whether "iFrame" should be used, or "Window" be
-                    used for instantiating every testcase for execution. </li>
-            </ol>
-        </li>
+            2.1 Read testcase URI from TestCases[i].
+            2.2 Verify validity using Pre-fetch javascript snippet. 
+            2.3.1 If referenced resource
+            fetches a proper response then perform these steps. Increment count of valid URLs (Say, i), and assign the URL as string to array "<code>ValidTests[i]</code>"    2.3.2. Else, if reference is invalid/undefined (Not applicable in context of Application-Layer. A testcase can be negative scenario having an intentional malfunctioning. Example, testing HTTP response code 404 handler.) 2.2.1.1. Increment <code>count of invalid URLs (Say,
+            k</code>), and 2.2.1.2. assign the URL as string to array "<code>InvalidTests[k]</code>" </li>
+        <li>An optional step to verify "c = i + k" can be used for tallying total testcases
+            count. </li>
+        <li>Browsing context - Individual testcase scope provided using iFrame/Window. </li>
+        <li>"Preferences" either using JSON-format/hardcoded, contains "SnapshotCount". It represents
+            the number of Browsing-contexts maintained for executing testcases. "ContextType"
+            is a preference, that indicates whether "iFrame" should be used, or "Window" be
+            used for instantiating every testcase for execution. </li>
     </ol>
 </div>
