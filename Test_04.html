@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>GCF Testsuite - Automated version of individual cases</title>
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta name="assert" content="GCF conformance test to verify absence of body section inside html document." />
+    <link rel="stylesheet" type="text/css" href="styles/testheaders.css" />
+    <script type="text/javascript" language="javascript" src="scripts/PostTestResults.js">
+    </script>
+    <script type="text/javascript" language="javascript" src="scripts/testscripts.js">
+    </script>
+    <script type="text/javascript" language="JavaScript">
+        //var testPageURL = 'resources/GCF/________________________________________.xhtml';
+        var testPageURL = 'http://www.google.com';
+        function handleExcpErr() {
+            alert('Ensure the following are set.\n1. testPageURL\n2. Evaluation Criteria\n3. testResult \n for this testcase');
+            logResult("004", false, "Exception occured inside generic exception handler. ");
+        }
+
+        function evaluateResult() {
+            var testDOM = document.getElementById('testiframe').contentDocument;
+            window.error = handleExcpErr;
+
+            /** <!-- 
+            Test case pass critera to be kept here. 
+            Based on the type of test, this may be altered. Ensure you assign true/false to the 'testResult' variable for logging purposes.
+            -->  
+            **/
+            try {
+
+                if (true) {
+                    testResult = true;
+                    logResult("004", testResult, "Observation__________");
+                }
+                else {
+                    testResult = false;
+                    logResult("004", testResult, "Expected and actual results_________");
+                }
+
+            }
+            catch (evaluationErr) {
+                testResult = false;
+                logResult("004", testResult, "Exception occured inside evaluateResult(). " + evaluationErr);
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div id="testdetails">
+        <p>
+            <span id="assertion">Assertion:</span> To verify if a ______
+        </p>
+        <p>
+            <span id="eval">Evaluation Criteria:</span> Test evalation should start immediately,
+            and is defined in this page header script. and alert with the result. Else, please
+            click on
+            <input type='button' id='evalBtn' value='Evaluate' onclick='evaluateResult();' />.
+            <ul>
+                <li><span id="passed">PASS</span> if </li>
+                ________.
+                <li><span id="failed">FAIL</span> if </li>
+                ________.
+            </ul>
+        </p>
+    </div>
+    <div id="testarea">
+    </div>
+</body>
+</html>

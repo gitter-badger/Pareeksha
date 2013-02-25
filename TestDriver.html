@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html dir="ltr" lang="en-us" xml:xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>QA Automation Driver</title>
+	<link rel="stylesheet" type="text/css" href="styles/testheaders.css" />
+    <script type="text/javascript" language="javascript" src="scripts/PostTestResults.js">
+    </script>
+	<script type="text/javascript" language="javascript">
+        var rtp = "";
+	    serverURL = "resources/Logtestresults.php";
+	    var summarizedResult='';
+	    var testEndResult = "\r-----------------------------------END TEST---------------------------------\r\r################################################################################\r\r";
+        var passCount = failCount = skipCount = 0;
+		var ticker = -1;
+		var tests = new Array("Test_01.html", "Test_02.html", "Test_03.html", "Test_04.html");
+        var failureList = new Array();
+		var skipList = new Array();
+        function incrementPassCount() {
+            passCount++;
+        }
+        function incrementFailCount() {
+            failCount++;
+        }
+        function incrementSkipCount() {
+            skipCount++;
+        }
+
+        //=========================================== START SERIAL LOAD ======================================================//
+
+        function loadNextTest() {
+            if (ticker < (tests.length - 1) ) {
+                ticker++;
+                document.getElementById("middleLevel").setAttribute("src", rtp + tests[ticker]);
+            }
+            else {
+                console.log('=============================================================================RESULT=======================================================');
+                console.log('PASS  :' + passCount);
+                console.log('FAIL  :' + failCount);
+                console.log('SKIP  :' + skipCount);
+                console.log('==========================================================================================================================================');
+                try {
+                    postResults(summarizedResult+testEndResult);
+                }
+                catch (serverLogErr) {
+                    console.error('Exception during creating log strings.\n.Details:\t' + serverLogErr);
+                    console.log('Server log failed.\n.Details:\t' + serverLogErr);
+                }
+                document.getElementById("middleLevel").setAttribute("src", "resources/log_results.txt");
+            }
+        }
+
+        //=========================================== END SERIAL LOAD ======================================================//
+
+        //=========================================== START SETUP ENVIRONMENT===============================================//
+
+        function setupEnvironment() {
+			summarizedResult = "\r-----------------------------------BEGIN TEST-----------------------------------\r";
+		loadNextTest();
+        }
+         
+        //=========================================== END SETUP ENVIRONMENT===============================================//
+        
+        function timedEvent() {
+            if (ticker < tests.length) {
+                ticker++;                
+		document.getElementById("middleLevel").setAttribute("src", rtp + tests[ticker]);
+                removeJunk();
+                
+            }
+            else {
+                
+                console.log('=============================================================================RESULT=======================================================');
+                console.log('PASS  :' + passCount);
+                console.log('FAIL  :' + failCount);
+                console.log('SKIP  :' + skipCount);
+                console.log('==========================================================================================================================================');
+				
+				try 
+				{
+						
+						postResults(summarizedResult+testEndResult);
+				}
+				catch (serverLogErr) 
+				{
+						console.error('Exception during creating log strings.\n.Details:\t' + serverLogErr);
+						console.log('Server log failed.\n.Details:\t' + serverLogErr);
+					}
+            }
+
+        }
+
+        function removeJunk() {
+            var tmp = document.getElementsByTagName('iframe')[0];
+            tmp = null;
+            window.setTimeout(timedEvent, 9000);
+            //CollectGarbage();
+        }
+
+
+        
+    </script>
+    
+</head>
+<body>
+    <script type="text/javascript" language="javascript">window.setTimeout(setupEnvironment, 3000);</script>
+    <iframe id="middleLevel"></iframe>
+</body>
+</html>
+
